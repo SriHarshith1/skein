@@ -1,0 +1,30 @@
+{
+  "game": {"slug": "testverse", "name": "Testverse", "calendar": "Years after the Fall (AF).", "description": "A tiny fixture world."},
+  "wiki": {"base": "https://testverse.example/wiki", "api": "https://testverse.example/api.php", "license": "CC BY-SA 3.0"},
+  "sources": [
+    {"key": "wiki-ara", "url": "https://testverse.example/wiki/Ara", "title": "Ara", "publisher": "wiki"},
+    {"key": "official", "url": "https://testverse.example/story", "title": "Story", "publisher": "official"}
+  ],
+  "timelines": [
+    {"slug": "prime", "name": "Prime", "kind": "canon", "parent": null, "description": "Main story."},
+    {"slug": "mirror", "name": "Mirror World", "kind": "alternate", "parent": "prime", "branch_note": "Branches when the gate opens."}
+  ],
+  "entities": [
+    {"slug": "ara", "name": "Ara", "kind": "character", "aliases": ["The Lantern"], "summary": "A gatekeeper who guards the Rift.", "sources": ["wiki-ara"]},
+    {"slug": "bren", "name": "Bren", "kind": "character", "summary": "Ara's older brother and a smith.", "sources": ["wiki-ara"]},
+    {"slug": "cass", "name": "Cass", "kind": "character", "summary": "A rival gatekeeper.", "sources": ["official"]},
+    {"slug": "mirror-ara", "name": "Mirror Ara", "kind": "character", "timeline": "mirror", "variant_of": "ara", "summary": "Ara from the Mirror World who rules it.", "sources": ["official"]},
+    {"slug": "rift", "name": "The Rift", "kind": "place", "summary": "A tear between worlds.", "sources": ["official"]}
+  ],
+  "events": [
+    {"slug": "the-fall", "timeline": "prime", "title": "The Fall", "summary": "The sky breaks and the Rift appears.", "date_label": "0 AF", "sort_key": 0, "importance": 5, "participants": [{"entity": "rift", "role": "site"}], "sources": ["official"]},
+    {"slug": "gate-opens", "timeline": "prime", "title": "The Gate Opens", "summary": "Ara opens the gate to the Mirror World.", "date_label": "12 AF", "sort_key": 12, "importance": 4, "participants": [{"entity": "ara", "role": "instigator"}, {"entity": "cass", "role": "witness"}], "sources": ["wiki-ara"]},
+    {"slug": "mirror-crowning", "timeline": "mirror", "title": "Mirror Ara is crowned", "summary": "In the Mirror World, Ara takes the throne.", "date_label": "13 AF", "sort_key": 13, "importance": 3, "participants": [{"entity": "mirror-ara", "role": "ruler"}], "sources": ["official"]}
+  ],
+  "relationships": [
+    {"source": "ara", "target": "bren", "kind": "sibling", "timeline": null, "description": "Siblings.", "sources": ["wiki-ara"]},
+    {"source": "ara", "target": "cass", "kind": "rival", "timeline": "prime", "description": "Rival gatekeepers.", "since_event": "gate-opens", "sources": ["official"]},
+    {"source": "mirror-ara", "target": "cass", "kind": "romance", "timeline": "mirror", "description": "In the mirror they are lovers.", "sources": ["official"]},
+    {"source": "ara", "target": "ghost", "kind": "ally", "timeline": null, "description": "Broken ref on purpose.", "sources": ["nope"]}
+  ]
+}

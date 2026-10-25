@@ -1,0 +1,6028 @@
+{
+  "game": {
+    "slug": "marvel-rivals",
+    "name": "Marvel Rivals",
+    "calendar": "There is no shared in-universe calendar: the Present and Collapsed timelines are set in the present day (mid-2020s) and the 2099 Timeline in 2099, so lore is labeled by the game season that told it, and sort_key places every event on one present-day axis (Timestream Entanglement = 2025.0, about 0.1 per season), with older backstory keyed to approximate years.",
+    "description": "Marvel Rivals is a free-to-play team-based hero shooter by NetEase Games, released on 6 December 2024. Its story starts when Doctor Doom and Doom 2099 trigger the Timestream Entanglement, which breaks the multiverse into Chronoverses and throws heroes from different realities together. Each season adds a new story arc told through Gallery Cards, Hero Stories, events and map descriptions."
+  },
+  "wiki": {
+    "base": "https://marvelrivals.fandom.com/wiki/",
+    "api": "https://marvelrivals.fandom.com/api.php",
+    "license": "CC BY-SA 3.0",
+    "notes": "Fandom is the active wiki (MediaWiki 1.43, about 3,200 articles, edits on the day of research). The marvelrivals.wiki.gg fork is inactive (64 articles, no recent edits). action=parse&page=<Page>&prop=wikitext&format=json with redirects=1 worked with a browser User-Agent and no rate limiting at about 3 requests per second. Most useful: Category:Lore, Category:Chronoverses, Category:Seasonal Storyline, the per-season 'Season N: <Title>/Lore' pages (condensed chronological story), '<Hero>/Lore' pages (full Hero Story text) and the 'Present/2099/Mosaic/Collapsed Timeline' pages, which list each character's Chronoverse of origin. Many chronoverse pages carry a LoreDeduction notice, so some origin assignments are fan inference."
+  },
+  "sources": [
+    {
+      "key": "official-home",
+      "url": "https://www.marvelrivals.com/",
+      "title": "Marvel Rivals official site: map and season descriptions",
+      "publisher": "official"
+    },
+    {
+      "key": "wiki-te",
+      "url": "https://marvelrivals.fandom.com/wiki/Timestream_Entanglement",
+      "title": "Timestream Entanglement - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-chronoverses",
+      "url": "https://marvelrivals.fandom.com/wiki/Chronoverses",
+      "title": "Chronoverses - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-present",
+      "url": "https://marvelrivals.fandom.com/wiki/Present_Timeline",
+      "title": "Present Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-2099",
+      "url": "https://marvelrivals.fandom.com/wiki/2099_Timeline",
+      "title": "2099 Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-mosaic",
+      "url": "https://marvelrivals.fandom.com/wiki/Mosaic_Timeline",
+      "title": "Mosaic Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-collapsed",
+      "url": "https://marvelrivals.fandom.com/wiki/Collapsed_Timeline",
+      "title": "Collapsed Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-misc",
+      "url": "https://marvelrivals.fandom.com/wiki/Miscellaneous_Chronoverses",
+      "title": "Miscellaneous Chronoverses - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-watercolor",
+      "url": "https://marvelrivals.fandom.com/wiki/Watercolor_Timeline",
+      "title": "Watercolor Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-zombies",
+      "url": "https://marvelrivals.fandom.com/wiki/Marvel_Zombies_Timeline",
+      "title": "Marvel Zombies Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-doomsday",
+      "url": "https://marvelrivals.fandom.com/wiki/Path_to_Doomsday_Timeline",
+      "title": "Path to Doomsday Timeline - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-trd",
+      "url": "https://marvelrivals.fandom.com/wiki/Timestream_Reintegration_Device",
+      "title": "Timestream Reintegration Device - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-chronovium",
+      "url": "https://marvelrivals.fandom.com/wiki/Chronovium",
+      "title": "Chronovium - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-galacta",
+      "url": "https://marvelrivals.fandom.com/wiki/Galacta",
+      "title": "Galacta - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-doom",
+      "url": "https://marvelrivals.fandom.com/wiki/Doctor_Doom",
+      "title": "Doctor Doom - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-doom2099",
+      "url": "https://marvelrivals.fandom.com/wiki/Doom_2099",
+      "title": "Doom 2099 - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-seasons",
+      "url": "https://marvelrivals.fandom.com/wiki/Seasons",
+      "title": "Seasons - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-heroes",
+      "url": "https://marvelrivals.fandom.com/wiki/Heroes",
+      "title": "Heroes - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s0",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_0:_Dooms%27_Rise/Lore",
+      "title": "Season 0: Dooms' Rise/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s1",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_1:_Eternal_Night_Falls/Lore",
+      "title": "Season 1: Eternal Night Falls/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s2",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_2:_Hellfire_Gala/Lore",
+      "title": "Season 2: Hellfire Gala/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s3",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_3:_The_Abyss_Awakens/Lore",
+      "title": "Season 3: The Abyss Awakens/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s4",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_4:_Heart_of_the_Dragon/Lore",
+      "title": "Season 4: Heart of the Dragon/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s5",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_5:_Love_is_a_Battlefield/Lore",
+      "title": "Season 5: Love is a Battlefield/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s6",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_6:_Night_at_the_Museum/Lore",
+      "title": "Season 6: Night at the Museum/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s7",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_7:_The_Hunt_Is_On/Lore",
+      "title": "Season 7: The Hunt Is On/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-blood-hunt",
+      "url": "https://marvelrivals.fandom.com/wiki/Blood_Hunt/Lore",
+      "title": "Blood Hunt/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s8",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_8:_Sins_of_Alchemax/Lore",
+      "title": "Season 8: Sins of Alchemax/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s9",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_9:_The_Mystery_of_Thebes/Lore",
+      "title": "Season 9: The Mystery of Thebes/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-s10",
+      "url": "https://marvelrivals.fandom.com/wiki/Season_10:_Butcher%27s_Blasphemy/Lore",
+      "title": "Season 10: Butcher's Blasphemy/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-mrf-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Mister_Fantastic/Lore",
+      "title": "Mister Fantastic/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-cap-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Captain_America/Lore",
+      "title": "Captain America/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-bp-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Black_Panther/Lore",
+      "title": "Black Panther/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-starlord-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Star-Lord/Lore",
+      "title": "Star-Lord/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-venom-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Venom/Lore",
+      "title": "Venom/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-adam-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Adam_Warlock/Lore",
+      "title": "Adam Warlock/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-hulk-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Hulk/Lore",
+      "title": "Hulk/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-ironfist-lore",
+      "url": "https://marvelrivals.fandom.com/wiki/Iron_Fist/Lore",
+      "title": "Iron Fist/Lore - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-gorr",
+      "url": "https://marvelrivals.fandom.com/wiki/Gorr",
+      "title": "Gorr - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-moongirl",
+      "url": "https://marvelrivals.fandom.com/wiki/Moon_Girl",
+      "title": "Moon Girl - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    },
+    {
+      "key": "wiki-whitefox",
+      "url": "https://marvelrivals.fandom.com/wiki/White_Fox",
+      "title": "White Fox - Marvel Rivals Wiki",
+      "publisher": "wiki"
+    }
+  ],
+  "timelines": [
+    {
+      "slug": "present",
+      "name": "Present Timeline",
+      "kind": "canon",
+      "parent": null,
+      "branch_note": null,
+      "description": "The present-day (mid-2020s) Chronoverse where most playable heroes come from. New York City is its focal point, and it suffers the Eternal Night, the Alchemax incursion and the Blood Hunt."
+    },
+    {
+      "slug": "timeline-2099",
+      "name": "2099 Timeline",
+      "kind": "alternate",
+      "parent": "present",
+      "branch_note": "A separate future reality set in the year 2099, home of Doom 2099. Krakoa and Arakko were carried into it by a timestorm during the Timestream Entanglement.",
+      "description": "A techno-dystopia ruled by megacorporations such as Alchemax. It holds Tokyo 2099, Nueva York, the Web of Life and Destiny and the time-displaced mutant nation of Krakoa."
+    },
+    {
+      "slug": "mosaic",
+      "name": "Mosaic Timeline",
+      "kind": "alternate",
+      "parent": "present",
+      "branch_note": "One of the four main Chronoverses formed by the Timestream Entanglement; its space-time is described as unstable.",
+      "description": "A mostly cosmic reality of interstellar travel and alien threats. It contains the Intergalactic Empire of Wakanda, the Guardians of the Galaxy and Knull's prison planet Klyntar."
+    },
+    {
+      "slug": "collapsed",
+      "name": "Collapsed Timeline",
+      "kind": "alternate",
+      "parent": "present",
+      "branch_note": "A present-day reality ravaged by a war between gods and demons. It was first called the Collapsing Timeline and was renamed from Season 9.",
+      "description": "A dying world of divine and demonic war, where even gods die. It is the home of Scarlet Witch, Magik, Hulk, Daredevil, Elsa Bloodstone, Gorr and Apocalypse's Thebes."
+    },
+    {
+      "slug": "watercolor",
+      "name": "Watercolor Timeline",
+      "kind": "alternate",
+      "parent": "present",
+      "branch_note": "Unofficial wiki name. A minor Chronoverse that the Timestream Entanglement destroyed soon after it began.",
+      "description": "Psylocke's home reality, loosely based on the Demon Days universe. The Collector sent Deadpool to take Psylocke from it before it fell."
+    },
+    {
+      "slug": "jeff-timeline",
+      "name": "Jeff's Timeline",
+      "kind": "alternate",
+      "parent": "present",
+      "branch_note": "Unofficial wiki name for an unnamed reality on the verge of destruction after the Entanglement.",
+      "description": "The home of Jeff the Land Shark, Gwenpool and a local Deadpool. The Present Timeline's Deadpool took Jeff from it for the Collector."
+    },
+    {
+      "slug": "venom-timeline",
+      "name": "Venom's Timeline",
+      "kind": "alternate",
+      "parent": "present",
+      "branch_note": "Unofficial wiki name for an unknown reality devastated by Knull's forces.",
+      "description": "The uncertain home reality of Venom. The Entanglement linked Venom to the Mosaic Timeline's symbiote hivemind, so Eddie and the symbiote are unsure where they came from."
+    },
+    {
+      "slug": "marvel-zombies",
+      "name": "Marvel Zombies Timeline",
+      "kind": "au",
+      "parent": "present",
+      "branch_note": "Unofficial wiki name for a minor Chronoverse on the brink of destruction after the Entanglement.",
+      "description": "A reality where a Quantum Realm virus zombified much of the world. Its zombie Scarlet Witch, the Queen of the Dead, hunts for a zombie symbiote called K-44."
+    },
+    {
+      "slug": "path-to-doomsday",
+      "name": "Path to Doomsday Timeline",
+      "kind": "au",
+      "parent": "present",
+      "branch_note": "Unofficial wiki name for the setting of the multi-season Path to Doomsday event, inspired by the MCU Infinity Saga.",
+      "description": "A reality modeled loosely on the Avengers films, seen through the eyes of the God of Stories, in which the heroes move toward a clash with Doctor Doom."
+    },
+    {
+      "slug": "beyond-the-chronoverses",
+      "name": "Realms Beyond the Chronoverses",
+      "kind": "alternate",
+      "parent": null,
+      "branch_note": "Grouping used in this file, not an in-game name. The wiki describes the God Quarry as unbound to any timeline and Omnipotence City as independent of the Chronoverse; the Elders' merged domain also sits outside the four main realities.",
+      "description": "Cosmic domains outside any single Chronoverse: the merged Collector's Gallery and Grand Garden, the God Quarry, Omnipotence City and the House of Ideas."
+    }
+  ],
+  "entities": [
+    {
+      "slug": "adam-warlock",
+      "name": "Adam Warlock",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A golden cosmic guardian who sealed himself in a cocoon when the Timestream Entanglement struck and drifted into the Mosaic reality, where Bast spoke to him. His cosmic senses led him to Klyntar, and later he helped work out Gorr's Godbomb plan.",
+      "sources": [
+        "wiki-present",
+        "wiki-adam-lore",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "angela",
+      "name": "Angela",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Odin's daughter, raised as an angel in the hidden Tenth Realm of Heven. The Entanglement swept Heven into the Collapsed Timeline, where she became its queen, and she now hunts for her infant sister Laussa.",
+      "sources": [
+        "wiki-present",
+        "wiki-s4",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "black-cat",
+      "name": "Black Cat",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Felicia"
+      ],
+      "summary": "Felicia, a thief whom Mayor Fisk hired to steal the Tablet of Life and Time. She gave Fisk a replica, traded the real Tablet to Doctor Doom to free the Thieves Guild, and then became the Guild's leader.",
+      "sources": [
+        "wiki-s7",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "black-panther",
+      "name": "Black Panther",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [
+        "T'Challa"
+      ],
+      "summary": "T'Challa, ruler of the Intergalactic Empire of Wakanda, who trusts neither Doom. On a trip to the Present Timeline to deliver a Heart-Shaped Herb he was turned into a vampire by Dracula's Blood Chronovium but kept his own mind.",
+      "sources": [
+        "wiki-mosaic",
+        "wiki-bp-lore",
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "black-widow",
+      "name": "Black Widow",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [
+        "Natasha Romanoff",
+        "Natalia Romanova"
+      ],
+      "summary": "Natalia Romanova, kept alive into 2099 by a life-extending serum. She turned the Red Room into her own spy network, leads the Resistance and freed the frozen Captain America from Alchemax.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "blade",
+      "name": "Blade",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Daywalker vampire hunter, captured and drained by Dracula during the Eternal Night. After treatment in Wakanda he fought Hela on Klyntar with the Sword of Dracula and later turned Dracula to stone in the Blood Hunt.",
+      "sources": [
+        "wiki-present",
+        "wiki-s1",
+        "wiki-s3",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "captain-america",
+      "name": "Captain America",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [
+        "Steve Rogers"
+      ],
+      "summary": "Steve Rogers of the 2099 Timeline, frozen since World War II and thawed in 2099 by Black Widow. He found refuge in Wakanda, rescued Hawkeye and Winter Soldier from Hydra, and later surrendered under Fisk's Super Hero Ban.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s0",
+        "wiki-cap-lore",
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "cloak-and-dagger",
+      "name": "Cloak & Dagger",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A hero duo that the Entanglement fused so that only one of them can be physically present at a time. A portable TRD split them briefly, but Cloak teleported to save Dagger and joined them again.",
+      "sources": [
+        "wiki-present",
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "cyclops",
+      "name": "Cyclops",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Scott Summers"
+      ],
+      "summary": "Scott Summers, who was at Gambit and Rogue's wedding when Krakoa went to 2099. Alchemax captured him and used his optic blasts to make Punch Chronovium until Jean Grey freed him.",
+      "sources": [
+        "wiki-present",
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "daredevil",
+      "name": "Daredevil",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "Matt Murdock",
+        "Dizang"
+      ],
+      "summary": "Matt Murdock of the Collapsed Timeline, who lost nearly everyone to the Hand. He took the demon Beast's power in Hell, became Yinglong's champion and led the Eighth City, then lost the Shenloong final to Lin Lie.",
+      "sources": [
+        "wiki-collapsed",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "deadpool",
+      "name": "Deadpool",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Wade Wilson"
+      ],
+      "summary": "Wade Wilson, who toured universes in a bus stolen from Doctor Strange and then worked for the Collector, taking beings from dying worlds. He turned on the Collector at the Museum and founded a Monster Kingdom at home.",
+      "sources": [
+        "wiki-s6",
+        "wiki-present",
+        "wiki-misc"
+      ]
+    },
+    {
+      "slug": "devil-dinosaur",
+      "name": "Devil Dinosaur",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Moon Girl's dinosaur partner, whom the Entanglement split from her and locked in the Collector's Museum. After his rescue he wore Chrono-Armor to lead the assault on Alchemax Headquarters.",
+      "sources": [
+        "wiki-present",
+        "wiki-s8",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "doctor-strange",
+      "name": "Doctor Strange",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Stephen Strange"
+      ],
+      "summary": "The Sorcerer Supreme, who refused to give Doctor Doom the Darkhold and hid it in the Astral Plane, where he was then trapped. He won the book back from Khonshu, but its pages scattered as he escaped.",
+      "sources": [
+        "wiki-present",
+        "wiki-s0",
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "elsa-bloodstone",
+      "name": "Elsa Bloodstone",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A monster hunter from the Collapsed Timeline who lived in Bloodstone Manor with her brother Cullen. The Collector hired her to catch monsters, but she came to doubt the job and helped free the Museum's creatures.",
+      "sources": [
+        "wiki-collapsed",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "emma-frost",
+      "name": "Emma Frost",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A Krakoan mutant leader who threw the 2099 Hellfire Gala and made a secret pact with Doom 2099 to drain Krakoa's chronal poison. Her Hellfire Protocol pushed Alchemax out of its markets.",
+      "sources": [
+        "wiki-s2",
+        "wiki-s8",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "gambit",
+      "name": "Gambit",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Remy"
+      ],
+      "summary": "Remy, whose wedding to Rogue was cut short when Krakoa was swept to 2099. He took the Grandmaster's deal to steal a von Doom contract from the Collector, and later died in Thebes and was revived.",
+      "sources": [
+        "wiki-s5",
+        "wiki-s9",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "gorr",
+      "name": "Gorr",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "God Butcher"
+      ],
+      "summary": "The God Butcher, a grieving believer who took up the Necrosword All-Black and spent centuries killing gods. He built a Godbomb to end all gods and died setting it off, after which he became the new King in Black.",
+      "sources": [
+        "wiki-gorr",
+        "wiki-s10",
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "slug": "groot",
+      "name": "Groot",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A Guardian of the Galaxy who crashed on Klyntar with his team. He later competed in the Shenloong Tournament and lost to a riddle he could not answer aloud.",
+      "sources": [
+        "wiki-mosaic",
+        "wiki-s3",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "hawkeye",
+      "name": "Hawkeye",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Clint Barton"
+      ],
+      "summary": "Clint Barton, sent by S.H.I.E.L.D. to rescue Winter Soldier from Hydra's Charteris Base. He cut off Bucky's tentacle arm to close the portal and escaped with Captain America to Wakanda.",
+      "sources": [
+        "wiki-s0",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "hela",
+      "name": "Hela",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Asgardian goddess of death, who found Chronovium in Hel and helped Loki seize Yggsgard. She later became Knull's Queen in Black, fled after Blade beat her, and asked for sanctuary in the Eighth City.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s3",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "hulk",
+      "name": "Hulk",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "Bruce Banner"
+      ],
+      "summary": "Bruce Banner of the Collapsed Timeline, who built a Gamma Belt to control his changes. When the Entanglement turned his missile base into a demonic battleground, he became guardian of the Green Door and sent the banished Thor to Bloodstone Manor.",
+      "sources": [
+        "wiki-collapsed",
+        "wiki-hulk-lore"
+      ]
+    },
+    {
+      "slug": "human-torch",
+      "name": "Human Torch",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Johnny"
+      ],
+      "summary": "Johnny of the Fantastic Four, who burned vampires on patrol during the Eternal Night. He planned to go supernova as a diversion so the heroes could reach Dracula's castle.",
+      "sources": [
+        "wiki-s1",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "invisible-woman",
+      "name": "Invisible Woman",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Sue"
+      ],
+      "summary": "Sue of the Fantastic Four, who scouted Dracula's army in Central Park. She rescued H.E.R.B.I.E. at Grand Central with help from Peni Parker's Spider-Bots.",
+      "sources": [
+        "wiki-s1",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "iron-fist",
+      "name": "Iron Fist",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Lin Lie"
+      ],
+      "summary": "Lin Lie, a former Sword Master who received Shou-Lao's chi after a near-fatal battle. When K'un-Lun fused with the other Capital Cities he was the only Immortal Weapon left, and he won the Shenloong Tournament.",
+      "sources": [
+        "wiki-ironfist-lore",
+        "wiki-s4",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "iron-man",
+      "name": "Iron Man",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Tony Stark"
+      ],
+      "summary": "Tony Stark, co-designer of the Timestream Reintegration Device, which he nicknamed Trudy. He rebooted Ultron's old body with a firewall to turn it against X-Tron.",
+      "sources": [
+        "wiki-trd",
+        "wiki-s1",
+        "wiki-s2"
+      ]
+    },
+    {
+      "slug": "jeff-the-land-shark",
+      "name": "Jeff the Land Shark",
+      "kind": "character",
+      "timeline": "jeff-timeline",
+      "variant_of": null,
+      "aliases": [
+        "Jeff"
+      ],
+      "summary": "A small land shark that Deadpool took for the Collector, who later wiped his memory. Jeff escaped the Museum, broke Knull's hold on the Guardians by humming, and swallowed the Norn Stone.",
+      "sources": [
+        "wiki-misc",
+        "wiki-s3",
+        "wiki-s6",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "jubilee",
+      "name": "Jubilee",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Jubilation"
+      ],
+      "summary": "A mutant whose son Shogo was left stuck in dragon form by the Entanglement. She became Apocalypse's Horseman of Famine for his promise to cure Shogo, saw him murdered, and used his Death Seeds to revive fallen heroes.",
+      "sources": [
+        "wiki-s9",
+        "wiki-present",
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "slug": "loki",
+      "name": "Loki",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The God of Mischief, who used visions from Chronovium-infused sap to seize Yggsgard and banish Thor. He later killed Psylocke in Thebes, was killed by Gorr, wrote his own fate on the Canvas of Destiny and returned.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s4",
+        "wiki-s9",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "luna-snow",
+      "name": "Luna Snow",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A Korean pop star and Tiger Division member whose Jeju Island concert Namor interrupted. Fisk jailed her in the Vault, and White Fox helped her escape.",
+      "sources": [
+        "wiki-present",
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "magik",
+      "name": "Magik",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "Illyana Rasputin"
+      ],
+      "summary": "Illyana Rasputin, who became Queen of Limbo after her timeline's New Mutants died. She joined Scarlet Witch and Wolverine on a trip to Krakoa and later returned Angela to her home timeline.",
+      "sources": [
+        "wiki-s0",
+        "wiki-collapsed",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "magneto",
+      "name": "Magneto",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The leader of mutantkind on Krakoa, glad to find his people in 2099. He made a chaos-powered Cerebro with Scarlet Witch, was killed by Ultron and resurrected, and tore Cerebro from X-Tron.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s2",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "mantis",
+      "name": "Mantis",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A Guardian of the Galaxy whom the Entanglement dropped into the Collector's Museum. She restored the Grand Garden with Loki, and later used his horn to find the Chronicler and get Thor brought back.",
+      "sources": [
+        "wiki-mosaic",
+        "wiki-s6",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "mister-fantastic",
+      "name": "Mister Fantastic",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Reed Richards"
+      ],
+      "summary": "Reed Richards, who works with the Mosaic Timeline's Shuri and with Tony Stark on the Timestream Reintegration Device. He named Chronovium as the key power source and led the Fantastic Four through the Eternal Night.",
+      "sources": [
+        "wiki-mrf-lore",
+        "wiki-trd",
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "moon-knight",
+      "name": "Moon Knight",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Marc Spector"
+      ],
+      "summary": "Marc Spector, Fist of Khonshu, who formed the Eternity Knights against Dracula's vampires. In Thebes he exposed Khonshu's massacres, and with the Eternity Mask he pushed back Gorr's Necroverse.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s1",
+        "wiki-s9",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "namor",
+      "name": "Namor",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The king of Talokan, who went through a Krakoan gateway to talk alliance with Magneto. The talks failed, and he went home to attack Jeju Island.",
+      "sources": [
+        "wiki-present",
+        "wiki-s2"
+      ]
+    },
+    {
+      "slug": "peni-parker",
+      "name": "Peni Parker",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A pilot from Tokyo 2099 who guards the Master Weaver and Spider-Zero against Doom 2099's Doombots. She also studies Chronovium.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Jean Grey"
+      ],
+      "summary": "Jean Grey, whose psychic link to Cyclops was cut by the Entanglement. As host of the Phoenix Force she cleansed Bast and fought Knull and Hela on Klyntar, then became the White Phoenix after absorbing Cyclops' energy.",
+      "sources": [
+        "wiki-s3",
+        "wiki-s8",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "psylocke",
+      "name": "Psylocke",
+      "kind": "character",
+      "timeline": "watercolor",
+      "variant_of": null,
+      "aliases": [
+        "Sai"
+      ],
+      "summary": "Sai, a psychic ninja from the destroyed Watercolor Timeline, whom Deadpool took for the Collector. She escaped and joined the X-Men, and in Thebes Loki killed her for her paint-like blood before a Death Seed revived her.",
+      "sources": [
+        "wiki-watercolor",
+        "wiki-s9",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "rocket-raccoon",
+      "name": "Rocket Raccoon",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [
+        "Rocket"
+      ],
+      "summary": "The Guardians' engineer, who swapped the Milano with a Celestial husk on Klyntar and planned the swap that sent Knull into the White Hot Room. A symbiote that healed him carried traces of his lost friend Lylla.",
+      "sources": [
+        "wiki-s3",
+        "wiki-mosaic"
+      ]
+    },
+    {
+      "slug": "rogue",
+      "name": "Rogue",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Gambit's bride, whose wedding on Krakoa was cut short by the timestorm. She absorbed Chronovium energy in the Grand Garden, and when she touched Doom 2099 she found that he had no memories at all.",
+      "sources": [
+        "wiki-s5",
+        "wiki-s6",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "scarlet-witch",
+      "name": "Scarlet Witch",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "Wanda Maximoff"
+      ],
+      "summary": "Wanda Maximoff of the Collapsed Timeline, who became Sorcerer Supreme after that reality's Doctor Strange died. She held her reality together, helped Strange from the Astral Plane and made an enhanced Cerebro with Magneto.",
+      "sources": [
+        "wiki-collapsed",
+        "wiki-s0",
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "spider-man",
+      "name": "Spider-Man",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Peter Parker"
+      ],
+      "summary": "Peter Parker of the Present Timeline, recruited by Spider-Zero into the Web-Warriors. He freed heroes from the Vault, and at the God Quarry the God Tempest found him worthy of Mjolnir's power.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s7",
+        "wiki-s10",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "squirrel-girl",
+      "name": "Squirrel Girl",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A defender of New York during the Eternal Night who tried to save Ratatoskr from Dracula. On holiday on Krakoa she helped revive Psylocke's dying wolf.",
+      "sources": [
+        "wiki-s1",
+        "wiki-s2",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "star-lord",
+      "name": "Star-Lord",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [
+        "Peter Quill"
+      ],
+      "summary": "Peter Quill, leader of the Guardians of the Galaxy, who led Shuri's scouting mission to Klyntar. The Milano crashed in a ship graveyard full of hungry symbiotes.",
+      "sources": [
+        "wiki-starlord-lore",
+        "wiki-mosaic"
+      ]
+    },
+    {
+      "slug": "storm",
+      "name": "Storm",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Ororo",
+        "Eternal Storm"
+      ],
+      "summary": "Ororo, who steered the islands Krakoa and Arakko through the Entanglement's timestorm and into 2099. At the God Quarry she accepted Eternity's power and became the Eternal Storm.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s10",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "the-hood",
+      "name": "The Hood",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Parker Robbins"
+      ],
+      "summary": "Parker Robbins, a Vault inmate who escaped with the cloak of the entity Oblivion. Sent to take the Tablet of Death and Entropy from Apocalypse, he killed Ozymandias and Gambit in Thebes.",
+      "sources": [
+        "wiki-s9",
+        "wiki-s7",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "the-punisher",
+      "name": "The Punisher",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [
+        "Frank Castle"
+      ],
+      "summary": "Frank Castle, kept alive into 2099 by a knock-off super-soldier serum. He joined Black Widow's Resistance, rode Devil Dinosaur into Alchemax HQ and used the TRD to send the building back to 2099.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s0",
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "the-thing",
+      "name": "The Thing",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Ben Grimm"
+      ],
+      "summary": "Ben Grimm of the Fantastic Four, who found the pure Chronovium crystal the TRD needed. On Yancy Street he found the vampire Black Panther and urged him to eat the Heart-Shaped Herb.",
+      "sources": [
+        "wiki-s1",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "thor",
+      "name": "Thor",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The God of Thunder, whom Loki banished to the Collapsed Timeline. He fought Gorr after Loki's death and gave his life to contain the Godbomb, then was restored when the Chronicler rearranged his own record of events.",
+      "sources": [
+        "wiki-s0",
+        "wiki-collapsed",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "ultron",
+      "name": "Ultron",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "An AI banished from Earth who returned after seventy years in space because Doom 2099 was trying to erase him from history. After his Hellfire Gala attack, Tony Stark rebooted his old body under a firewall to fight X-Tron.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s2"
+      ]
+    },
+    {
+      "slug": "venom",
+      "name": "Venom",
+      "kind": "character",
+      "timeline": "venom-timeline",
+      "variant_of": null,
+      "aliases": [
+        "Eddie Brock"
+      ],
+      "summary": "Eddie Brock and his symbiote, from a reality ravaged by Knull. They fought in the Collapsed Timeline's war with Magik, then on Klyntar took a Phoenix Egg shard and faced Knull with the Sword of Dracula.",
+      "sources": [
+        "wiki-misc",
+        "wiki-venom-lore",
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "white-fox",
+      "name": "White Fox",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The director of Korea's Tiger Division, who warns that travel between timelines speeds up the Entanglement. She gave Lin Lie the last shard of the Sword of Fu Xi and helped Luna Snow escape the Vault.",
+      "sources": [
+        "wiki-whitefox",
+        "wiki-s7",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "winter-soldier",
+      "name": "Winter Soldier",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Bucky Barnes"
+      ],
+      "summary": "Bucky Barnes, captured by Hydra's Occult Ops, who fused a tentacled arm onto him. He escaped to Wakanda with Hawkeye and Captain America, and in Thebes he confessed that he had once killed Wolverine's family.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s9",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "wolverine",
+      "name": "Wolverine",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Logan"
+      ],
+      "summary": "Logan, a Krakoan mutant with ties to the 2099 Resistance, who healed Captain America with Krakoan flowers and brought him to Wakanda. He was killed in Thebes and revived with a Death Seed.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s9",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "victor-von-doom",
+      "name": "Doctor Doom",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Victor von Doom",
+        "Doom"
+      ],
+      "summary": "Victor von Doom, the present-day monarch of Latveria, whose time experiment set off the Timestream Entanglement together with his 2099 self. He works from the shadows, gathering Pure Blood Chronovium, Shou-Lao's chi and the Tablet of Life and Time.",
+      "sources": [
+        "wiki-doom",
+        "wiki-s0",
+        "wiki-s1",
+        "wiki-heroes"
+      ]
+    },
+    {
+      "slug": "doom-2099",
+      "name": "Doom 2099",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": "victor-von-doom",
+      "aliases": [
+        "Victor von Doom"
+      ],
+      "summary": "The 2099 variant of Victor von Doom, who took part in the twin experiment that caused the Entanglement and named the resulting realities Chronoverses. He gave up his memories for power and now hunts the contract for his mother Cynthia's soul.",
+      "sources": [
+        "wiki-doom2099",
+        "wiki-s0",
+        "wiki-s5",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "galacta",
+      "name": "Galacta",
+      "kind": "character",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [
+        "Gali",
+        "Daughter of the Devourer"
+      ],
+      "summary": "The daughter of Galactus and the game's announcer. She eats Chronovium instead of worlds and used her power to shield a handful of timelines so that the heroes could find a solution.",
+      "sources": [
+        "wiki-galacta",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "galactus",
+      "name": "Galactus",
+      "kind": "character",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Devourer of Worlds and Galacta's father, who advised her to consume all of existence instead of preserving timelines.",
+      "sources": [
+        "wiki-galacta"
+      ]
+    },
+    {
+      "slug": "dracula",
+      "name": "Dracula",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Vlad Dracula"
+      ],
+      "summary": "The Lord of Vampires, who used a Chronovium shard from Doctor Doom and a drop of his own blood to lock New York in endless night. He escaped Fisk's Vault and returned during the Blood Hunt before Blade turned him to stone.",
+      "sources": [
+        "wiki-s1",
+        "wiki-blood-hunt",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "knull",
+      "name": "Knull",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [
+        "King in Black"
+      ],
+      "summary": "The King in Black, a dark god imprisoned in the core of Klyntar until the Entanglement woke him. He corrupted gods such as Bast and was finally destroyed when Rocket's device swapped him into the White Hot Room.",
+      "sources": [
+        "wiki-s3",
+        "wiki-mosaic",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "master-weaver",
+      "name": "Master Weaver",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The keeper of the Web of Life and Destiny, based in the Spider-Islands above Tokyo 2099. He wants to use the temporal rift's energy to power the Web despite the danger to civilians.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s0",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "spider-zero",
+      "name": "Spider-Zero",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Master Weaver's apprentice, from a destroyed universe. Banished for opposing his plan, she gathered spider-people from other realities into the Web-Warriors, and later opened the portal that carried Knowhere to the God Quarry.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s0",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "shuri",
+      "name": "Shuri",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Princess of the Intergalactic Empire of Wakanda and the driving force of its science. She first contacted Reed Richards across realities, calls the fractured realities Chronoverses, and sent the Guardians to Klyntar.",
+      "sources": [
+        "wiki-mosaic",
+        "wiki-mrf-lore",
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "bast",
+      "name": "Bast",
+      "kind": "character",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Panther Goddess of Wakanda's Orisha. Knull corrupted her until the Phoenix cleansed her in the Divine Space, after which she sent Shuri to gather warriors against Knull.",
+      "sources": [
+        "wiki-mosaic",
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "khonshu",
+      "name": "Khonshu",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Egyptian moon god and Moon Knight's master, who merged with his variants after the Entanglement. In Thebes he caused massacres to turn faith into hatred and set Gorr on Apocalypse, and he died after Moon Knight beat back the Necroverse.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s9",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "apocalypse",
+      "name": "Apocalypse",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "En Sabah Nur"
+      ],
+      "summary": "En Sabah Nur, who rebuilt Luxor in the Collapsed Timeline as Thebes and planned to absorb the faith of every god through his Faith-Harvesting Engine. He was murdered with All-Black on the day of his ascension.",
+      "sources": [
+        "wiki-collapsed",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "kingpin",
+      "name": "Kingpin",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Wilson Fisk"
+      ],
+      "summary": "Wilson Fisk, elected mayor of New York after the Eternal Night. He imposed a Super Hero Ban, bargained with the Gilded Saint, and resigned in shame after the heroes defeated him in Times Square.",
+      "sources": [
+        "wiki-s7",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "the-collector",
+      "name": "The Collector",
+      "kind": "character",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "An Elder of the Universe who gathers beings from dying universes for his Museum of Contemplation. He held the contract for Cynthia von Doom's soul, which he got from Mephisto.",
+      "sources": [
+        "wiki-s5",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "grandmaster",
+      "name": "Grandmaster",
+      "kind": "character",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [
+        "En Dwi Gast"
+      ],
+      "summary": "En Dwi Gast, an Elder of the Universe who co-created the Grand Garden with the Gardener. He hired Gambit to steal the von Doom contract from the Collector.",
+      "sources": [
+        "wiki-s5",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "tyler-stone",
+      "name": "Tyler Stone",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "An Alchemax executive who answered the Hellfire Trading Company by moving the corporation's headquarters into the past. He supplied Doom 2099 with Punch Chronovium in exchange for help against the mutants.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "moon-girl",
+      "name": "Moon Girl",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Lunella"
+      ],
+      "summary": "Lunella, separated from Devil Dinosaur by the Entanglement and caught by Alchemax in 2099. She was forced to study Punch Chronovium and triggered the incursion into the present, then helped the heroes undo it.",
+      "sources": [
+        "wiki-moongirl",
+        "wiki-s8",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "shou-lao",
+      "name": "Shou-Lao",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Shou-Lao the Undying"
+      ],
+      "summary": "The immortal dragon guardian of K'un-Lun and source of every Iron Fist's chi. The Entanglement froze him in a deep slumber until the heroes woke him, and he then hosted the Shenloong Tournament.",
+      "sources": [
+        "wiki-s4",
+        "official-home",
+        "wiki-te"
+      ]
+    },
+    {
+      "slug": "yinglong",
+      "name": "Yinglong",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A divine spirit imprisoned by the Beast. Freed by Daredevil, it made him its champion in exchange for help to recover the Sword of Fu Xi and free the war god Chiyou.",
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "ratatoskr",
+      "name": "Ratatoskr",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The giant Asgardian messenger squirrel whose horn can end an immortal's life. Dracula captured her during the Eternal Night and later turned her into a vampire with the Norn Stone.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s1",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "x-tron",
+      "name": "X-Tron",
+      "kind": "character",
+      "timeline": "timeline-2099",
+      "variant_of": "ultron",
+      "aliases": [],
+      "summary": "A new body Ultron grew by hacking Krakoa's Resurrection Protocols, which gave it Krakoa's absorbed chronal energy. After Magneto took back Cerebro, Doom 2099 erased it from existence.",
+      "sources": [
+        "wiki-s2",
+        "wiki-seasons"
+      ]
+    },
+    {
+      "slug": "captain-america-present",
+      "name": "Captain America (Present Timeline)",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": "captain-america",
+      "aliases": [],
+      "summary": "The Present Timeline's Steve Rogers, who died saving Spider-Man from a gang of villains led by the Green Goblin. His spirit later appeared in Spider-Man's vision of worthiness at the God Quarry.",
+      "sources": [
+        "wiki-present",
+        "wiki-s7",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "doctor-strange-collapsed",
+      "name": "Doctor Strange (Collapsed Timeline)",
+      "kind": "character",
+      "timeline": "collapsed",
+      "variant_of": "doctor-strange",
+      "aliases": [],
+      "summary": "The Collapsed Timeline's Doctor Strange, who died in the final battle of the First Demon War. His death led Wanda Maximoff to take up the role of Sorcerer Supreme.",
+      "sources": [
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "slug": "scarlet-witch-zombies",
+      "name": "Queen of the Dead",
+      "kind": "character",
+      "timeline": "marvel-zombies",
+      "variant_of": "scarlet-witch",
+      "aliases": [],
+      "summary": "A zombified Scarlet Witch of the Marvel Zombies Timeline, driven mad by the Vision's death. She leads her forces on New York in search of the zombie symbiote K-44.",
+      "sources": [
+        "wiki-zombies"
+      ]
+    },
+    {
+      "slug": "the-chronicler",
+      "name": "The Chronicler",
+      "kind": "character",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": "loki",
+      "aliases": [],
+      "summary": "An aged form of Loki who, after his death at Gorr's hands, chose to record the histories of seven cosmos from the House of Ideas. By rearranging his own account he brought Thor back to life.",
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "cynthia-von-doom",
+      "name": "Cynthia von Doom",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Victor von Doom's late mother. The contract for her soul passed from Mephisto to the Collector, and Doom 2099's lost memories of her drive his hunt for it.",
+      "sources": [
+        "wiki-doom",
+        "wiki-doom2099",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "laussa",
+      "name": "Laussa Odinsdottir",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Laussa"
+      ],
+      "summary": "Angela's infant sister, taken by Hela's undead Valkyries and displaced to K'un-Lun by the Entanglement. Lin Lie cared for her there.",
+      "sources": [
+        "wiki-present",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "shogo-lee",
+      "name": "Shogo Lee",
+      "kind": "character",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Jubilee's son, stuck in his dragon form by the Timestream Entanglement and left in the care of the mutants on Krakoa.",
+      "sources": [
+        "wiki-present",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "krakoa",
+      "name": "Krakoa",
+      "kind": "place",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The living island and mutant nation, originally from the Present Timeline, that a timestorm carried into the 2099 Timeline. It hosted the 2099 Hellfire Gala and is poisoned by the chronal energy it absorbed.",
+      "sources": [
+        "wiki-present",
+        "wiki-s2",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "arakko",
+      "name": "Arakko",
+      "kind": "place",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Krakoa's sister island, once part of the landmass Okkara. It was displaced into 2099 together with Krakoa, and Ultron's virus took it over.",
+      "sources": [
+        "official-home",
+        "wiki-s2",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "yggsgard",
+      "name": "Yggsgard",
+      "kind": "place",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The new realm formed when the World Tree Yggdrasil overgrew Asgard in the wake of the Entanglement. Loki took its throne, and Gorr later shattered its Bifrost.",
+      "sources": [
+        "wiki-te",
+        "official-home",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "klyntar",
+      "name": "Klyntar",
+      "kind": "place",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The symbiote planet that holds Knull's prison, littered with a dead Celestial's husk. The Guardians, Venom, Phoenix and many heroes fought Knull and Hela there.",
+      "sources": [
+        "official-home",
+        "wiki-s3",
+        "wiki-mosaic"
+      ]
+    },
+    {
+      "slug": "intergalactic-empire-of-wakanda",
+      "name": "Intergalactic Empire of Wakanda",
+      "kind": "place",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A star-spanning Wakanda led by T'Challa and Shuri, which shelters heroes from other realities. The Entanglement caused anomalies there and began merging the spirit realm Djalia with the capital Birnin T'Challa.",
+      "sources": [
+        "wiki-te",
+        "official-home",
+        "wiki-mosaic"
+      ]
+    },
+    {
+      "slug": "tokyo-2099",
+      "name": "Tokyo 2099",
+      "kind": "place",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The future Tokyo, where a huge temporal rift opened above the city. The Master Weaver's Spider-Islands float above it, and Alchemax and the Public Eye hold power in its streets.",
+      "sources": [
+        "official-home",
+        "wiki-s0",
+        "wiki-2099"
+      ]
+    },
+    {
+      "slug": "hydra-charteris-base",
+      "name": "Hydra Charteris Base",
+      "kind": "place",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "Hell's Heaven",
+        "Erebus Base"
+      ],
+      "summary": "Hydra's Antarctic base, where the group mines Chronovium for super-soldiers and hides a portal to an ancient Hive. Also called Erebus Base in the lore.",
+      "sources": [
+        "official-home",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "kun-lun",
+      "name": "K'un-Lun",
+      "kind": "place",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [
+        "Heart of Heaven"
+      ],
+      "summary": "The mystic city of the Iron Fist, which the Entanglement fused with the other Capital Cities of Heaven into the Heart of Heaven and displaced into the Collapsed Timeline.",
+      "sources": [
+        "wiki-te",
+        "official-home",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "eighth-city",
+      "name": "The Eighth City",
+      "kind": "place",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Once a prison for criminals and monsters, now a refuge for those cast out of heaven, led by Daredevil under the title Dizang. Hela fled there for sanctuary.",
+      "sources": [
+        "wiki-s3",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "empire-of-eternal-night",
+      "name": "Empire of Eternal Night",
+      "kind": "place",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Manhattan under Dracula's endless night, with his castle in Central Park. The Sanctum Sanctorum and the Baxter Building served as the heroes' strongholds.",
+      "sources": [
+        "official-home",
+        "wiki-s1",
+        "wiki-te"
+      ]
+    },
+    {
+      "slug": "museum-of-contemplation",
+      "name": "Museum of Contemplation",
+      "kind": "place",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [
+        "Collector's Gallery"
+      ],
+      "summary": "The Collector's gallery of beings taken from dying universes, merged with the Grandmaster's Grand Garden after the Entanglement. Deadpool freed its exhibits.",
+      "sources": [
+        "official-home",
+        "wiki-s5",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "grand-garden",
+      "name": "Grand Garden",
+      "kind": "place",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A realm made by the Grandmaster and the Gardener, where Gambit and Rogue spent their honeymoon. It withered from Rogue's Chronovium surge until Mantis and Loki restored it.",
+      "sources": [
+        "official-home",
+        "wiki-s5",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "thebes",
+      "name": "Thebes",
+      "kind": "place",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Apocalypse's capital in the Collapsed Timeline, made from Luxor. After his murder a storm sealed his pyramid, trapping heroes inside with the killer.",
+      "sources": [
+        "official-home",
+        "wiki-collapsed",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "god-quarry",
+      "name": "God Quarry",
+      "kind": "place",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A realm of gods outside any timeline, where Gorr first found All-Black and where dead gods are entombed. He tried to detonate his Godbomb there.",
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "omnipotence-city",
+      "name": "Omnipotence City",
+      "kind": "place",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A gathering place of gods from every reality, which Gorr reached after the Entanglement, emptied of gods and turned into his mobile fortress.",
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "the-vault",
+      "name": "The Vault",
+      "kind": "place",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The prison where Mayor Fisk held arrested heroes, villains and seized artifacts. Black Cat and Spider-Man staged a breakout that freed many prisoners, Dracula among them.",
+      "sources": [
+        "wiki-s7",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "chronovium",
+      "name": "Chronovium",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Crystals of chronal energy formed as a byproduct of the Timestream Entanglement, with a different look in each reality. Galacta eats them, and the heroes need large amounts to power the Timestream Reintegration Device.",
+      "sources": [
+        "wiki-chronovium",
+        "wiki-s0",
+        "wiki-galacta"
+      ]
+    },
+    {
+      "slug": "blood-chronovium",
+      "name": "Blood Chronovium",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": "chronovium",
+      "aliases": [
+        "Pure Blood Chronovium"
+      ],
+      "summary": "Chronovium that Dracula fed with his blood to create the Eternal Night. Doctor Doom later used Dracula's essence to turn it into Pure Blood Chronovium.",
+      "sources": [
+        "wiki-chronovium",
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "punch-chronovium",
+      "name": "Punch Chronovium",
+      "kind": "artifact",
+      "timeline": "timeline-2099",
+      "variant_of": "chronovium",
+      "aliases": [],
+      "summary": "Chronovium that Alchemax overcharged with Cyclops' optic blasts. It can break dimensional barriers, and it powered the incursion of Alchemax HQ into the present.",
+      "sources": [
+        "wiki-chronovium",
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "timestream-reintegration-device",
+      "name": "Timestream Reintegration Device",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [
+        "TRD",
+        "Trudy"
+      ],
+      "summary": "A machine designed by Reed Richards, Tony Stark, Shuri and other geniuses to restore damaged realities. A full version needs vast chronal power, but portable prototypes can rewind damage and states.",
+      "sources": [
+        "wiki-trd",
+        "wiki-s1",
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "darkhold",
+      "name": "Darkhold",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The book of sins that holds the Vampiric Verses and the Montesi Formula. Doom wanted it to study time, and its pages scattered when Strange escaped the Astral Plane.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "cerebro",
+      "name": "Cerebro",
+      "kind": "artifact",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The mutant device that stores minds for Krakoa's Resurrection Protocols. Magneto and Scarlet Witch rebuilt it with chaos magic to call mutants from many realities, and Ultron stole it.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s2"
+      ]
+    },
+    {
+      "slug": "tablet-of-life-and-time",
+      "name": "Tablet of Life and Time",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A relic kept in the Sanctum Sanctorum. The Gilded Saint and Fisk wanted it, but Black Cat gave it to Doctor Doom.",
+      "sources": [
+        "wiki-s7",
+        "wiki-doom"
+      ]
+    },
+    {
+      "slug": "tablet-of-death-and-entropy",
+      "name": "Tablet of Death and Entropy",
+      "kind": "artifact",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The counterpart of the Tablet of Life and Time, kept by Apocalypse, which can speak with the dead. The Hood seized it, and Doom 2099 snatched it from him.",
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "all-black",
+      "name": "All-Black",
+      "kind": "artifact",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [
+        "Necrosword"
+      ],
+      "summary": "Knull's living Necrosword, which can kill gods and drain souls. It drifted to the God Quarry, chose Gorr, and was destroyed with him when it set off the Godbomb.",
+      "sources": [
+        "wiki-s3",
+        "wiki-s9",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "faith-harvesting-engine",
+      "name": "Faith-Harvesting Engine",
+      "kind": "artifact",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A Celestial artifact made by Apocalypse to drain the faith of every god. Khonshu absorbed its power, and Gorr took it to build his Godbomb.",
+      "sources": [
+        "wiki-s9",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "mjolnir",
+      "name": "Mjolnir",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Thor's hammer, which held the God Tempest. Gorr shattered it and caged the Tempest for his Godbomb, and Spider-Man was later judged worthy of its power.",
+      "sources": [
+        "wiki-s10",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "sword-of-fu-xi",
+      "name": "Sword of Fu Xi",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Lin Lie's divine sword, which shattered in battle and lodged in his arms. Daredevil needed it to free Chiyou, and White Fox later gave Lin Lie its final fragment.",
+      "sources": [
+        "wiki-ironfist-lore",
+        "wiki-s4",
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "eternity-mask",
+      "name": "Eternity Mask",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A mask from Kingpin's vault that matches its wearer's strength to the opponent's. Doctor Doom gave it to Moon Knight in the God Quarry.",
+      "sources": [
+        "wiki-s7",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "norn-stone",
+      "name": "Norn Stone",
+      "kind": "artifact",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "An Asgardian reality-altering stone that Dracula stole from the Vault to restore his power. Blade cut it from him, and Jeff swallowed it.",
+      "sources": [
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "doom-contract",
+      "name": "Contract for Cynthia von Doom's Soul",
+      "kind": "artifact",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A deal for the soul of Doom's mother, which Mephisto traded to the Collector. Gambit and Rogue stole it, and Doom 2099 took it from Rogue on Krakoa.",
+      "sources": [
+        "wiki-s5",
+        "wiki-s6",
+        "wiki-doom2099"
+      ]
+    },
+    {
+      "slug": "heart-shaped-herb",
+      "name": "Heart-Shaped Herb",
+      "kind": "artifact",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Wakanda's sacred herb, normally reserved for the Black Panther. It can cure vampirism, and Shuri gave Blade an experimental serum made from it.",
+      "sources": [
+        "wiki-s1",
+        "wiki-s3",
+        "wiki-galacta"
+      ]
+    },
+    {
+      "slug": "fantastic-four",
+      "name": "Fantastic Four",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Reed Richards, Sue, Johnny and Ben Grimm, who defended New York during the Eternal Night and work on the TRD from the Baxter Building.",
+      "sources": [
+        "wiki-s1",
+        "wiki-te"
+      ]
+    },
+    {
+      "slug": "x-men",
+      "name": "X-Men",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The mutant heroes based on Krakoa, now in 2099. They fought Ultron at the Hellfire Gala, raided Alchemax HQ and investigated Apocalypse's murder.",
+      "sources": [
+        "wiki-s2",
+        "wiki-s8",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "quiet-council",
+      "name": "Quiet Council",
+      "kind": "organization",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Krakoa's ruling council. Emma Frost's deal with Doom 2099 was kept from it because the council would not approve.",
+      "sources": [
+        "wiki-s2",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "guardians-of-the-galaxy",
+      "name": "Guardians of the Galaxy",
+      "kind": "organization",
+      "timeline": "mosaic",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The Mosaic Timeline's spacefaring team of Star-Lord, Rocket, Groot and Mantis, sent by Shuri to Klyntar.",
+      "sources": [
+        "wiki-mosaic",
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "web-warriors",
+      "name": "Web-Warriors",
+      "kind": "organization",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A team of spider-heroes from many realities that Spider-Zero gathered in Tokyo 2099 to stop the Master Weaver and protect the Web of Life and Destiny.",
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "resistance-2099",
+      "name": "The Resistance",
+      "kind": "organization",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Black Widow's opposition movement in 2099, with Wolverine and The Punisher among its allies. It followed Alchemax into the present to stop it from exploiting another reality.",
+      "sources": [
+        "wiki-s0",
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "hydra",
+      "name": "Hydra",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A terrorist group that mines Chronovium at Charteris Base. Its Occult Ops division experiments on super-soldiers and serves an ancient Hive beyond a portal.",
+      "sources": [
+        "wiki-s0",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "alchemax",
+      "name": "Alchemax",
+      "kind": "organization",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "The megacorporation that dominates 2099. It captured Cyclops and Moon Girl, made Punch Chronovium and moved its headquarters into present-day Manhattan.",
+      "sources": [
+        "wiki-2099",
+        "wiki-s8",
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "tiger-division",
+      "name": "Tiger Division",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "A Korean hero agency directed by White Fox. It set up a secret base at Empire State University to rescue heroes from the Vault.",
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "thieves-guild",
+      "name": "Thieves Guild",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "New York's guild of thieves, once controlled by the Gilded Saint and freed by Black Cat's deal with Doom. Black Cat then became its Guildmaster.",
+      "sources": [
+        "wiki-s7",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "clan-akkaba",
+      "name": "Clan Akkaba",
+      "kind": "organization",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Apocalypse's followers in the Collapsed Timeline, which he rallied across Egypt. Ozymandias was one of its first members.",
+      "sources": [
+        "wiki-collapsed",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "horsemen-of-death",
+      "name": "Horsemen of Death",
+      "kind": "organization",
+      "timeline": "collapsed",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Apocalypse's four horsemen in the Collapsed Timeline, with Jubilee as the Horseman of Famine. After his death they sided with Moon Knight against Khonshu.",
+      "sources": [
+        "wiki-s8",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "eternity-knights",
+      "name": "Eternity Knights",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "An alliance that Moon Knight formed with Iron Man, Wolverine, Winter Soldier, Adam Warlock and Psylocke to slay Dracula's vampires.",
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "avengers",
+      "name": "Avengers",
+      "kind": "organization",
+      "timeline": null,
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Earth's Mightiest Heroes, whom Thor summoned against Gorr over New York. They were defeated, and Captain America's shield was shattered.",
+      "sources": [
+        "wiki-s10",
+        "wiki-s2"
+      ]
+    },
+    {
+      "slug": "corporate-raiders",
+      "name": "Corporate Raiders",
+      "kind": "organization",
+      "timeline": "timeline-2099",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Alchemax's strike force of clone super-enforcers made in the image of heroes such as Gambit, Rogue, Magik, Wolverine and Star-Lord.",
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "elders-of-the-universe",
+      "name": "Elders of the Universe",
+      "kind": "organization",
+      "timeline": "beyond-the-chronoverses",
+      "variant_of": null,
+      "aliases": [],
+      "summary": "Ancient cosmic beings, among them the Collector, the Grandmaster and the Gardener, some of whom merged their domains after the Entanglement.",
+      "sources": [
+        "wiki-s5"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "gorr-becomes-god-butcher",
+      "timeline": "collapsed",
+      "title": "Gorr becomes the God Butcher",
+      "summary": "After losing his family, the devout Gorr met his gods and learned they had ignored his prayers. The Necrosword All-Black, adrift in the God Quarry, answered his wish for the power to kill gods, and he struck down the god who had begged him for help.",
+      "date_label": "Hundreds of years ago",
+      "sort_key": 1700.0,
+      "era": "Before the Entanglement",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "gorr",
+          "role": "instigator"
+        },
+        {
+          "entity": "all-black",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s10",
+        "wiki-gorr"
+      ]
+    },
+    {
+      "slug": "captain-america-frozen",
+      "timeline": "timeline-2099",
+      "title": "Captain America is frozen in ice",
+      "summary": "During his last mission of World War II, Steve Rogers' plane crashed into the Arctic. In this reality he stayed frozen until Alchemax held him as a secret asset in 2099.",
+      "date_label": "World War II",
+      "sort_key": 1945.0,
+      "era": "Before the Entanglement",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "captain-america",
+          "role": "victim"
+        }
+      ],
+      "sources": [
+        "wiki-2099",
+        "wiki-cap-lore"
+      ]
+    },
+    {
+      "slug": "lin-lie-becomes-iron-fist",
+      "timeline": "present",
+      "title": "Lin Lie becomes the Iron Fist",
+      "summary": "Lin Lie, the Sword Master of the Agents of Atlas, was badly hurt by a kumiho and his Sword of Fu Xi shattered. Shou-Lao saved him by granting him his chi, which made him the new Iron Fist without the usual trial.",
+      "date_label": "Before the Entanglement",
+      "sort_key": 2024.5,
+      "era": "Before the Entanglement",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "iron-fist",
+          "role": "victim"
+        },
+        {
+          "entity": "shou-lao",
+          "role": "ally"
+        },
+        {
+          "entity": "sword-of-fu-xi",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-ironfist-lore",
+        "wiki-present",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "doom-demands-darkhold",
+      "timeline": "present",
+      "title": "Doctor Doom demands the Darkhold",
+      "summary": "Doom came to the Sanctum Sanctorum for the Darkhold's Vampiric Verses, which he believed could unlock time. Strange refused, the two dueled, and Strange hid the book in the Astral Plane.",
+      "date_label": "A few months before the Entanglement",
+      "sort_key": 2024.8,
+      "era": "Before the Entanglement",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "doctor-strange",
+          "role": "rival"
+        },
+        {
+          "entity": "darkhold",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "doom-visits-khonshu",
+      "timeline": "present",
+      "title": "Doom asks Khonshu to hold the moon",
+      "summary": "Doom entered Khonshu's Divine Space and asked the moon god to keep the moon over one city so he could study vampires. Khonshu refused and banished him, and later warned Doom of a coming darkness.",
+      "date_label": "Before the Entanglement",
+      "sort_key": 2024.85,
+      "era": "Before the Entanglement",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "khonshu",
+          "role": "rival"
+        },
+        {
+          "entity": "moon-knight",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "timestream-entanglement",
+      "timeline": "present",
+      "title": "The Timestream Entanglement",
+      "summary": "Doctor Doom and Doom 2099 mastered time at the same moment from two points in reality, and the clash tore the multiverse apart. Realities collapsed or merged into the Chronoverses, and Chronovium crystals formed as a byproduct.",
+      "date_label": "Dooms' Rise",
+      "sort_key": 2025.0,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 5,
+      "participants": [
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "doom-2099",
+          "role": "instigator"
+        },
+        {
+          "entity": "chronovium",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-te",
+        "wiki-s0",
+        "wiki-chronoverses",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "galacta-preserves-timelines",
+      "timeline": "beyond-the-chronoverses",
+      "title": "Galacta shields a handful of timelines",
+      "summary": "Galacta found that Chronovium could satisfy her hunger but saw that the Entanglement could end every reality. She used her power to protect a few timelines so that their heroes could find a fix, and the effort left her too drained to fight.",
+      "date_label": "Dooms' Rise",
+      "sort_key": 2025.005,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "galacta",
+          "role": "ally"
+        },
+        {
+          "entity": "chronovium",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-galacta",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "krakoa-carried-to-2099",
+      "timeline": "timeline-2099",
+      "title": "Storm steers Krakoa into 2099",
+      "summary": "A timestorm struck Arakko and Krakoa during the Entanglement. Storm calmed it and guided the sister islands through, but they came out in the year 2099, where Magneto welcomed a future of prosperity for mutantkind.",
+      "date_label": "2099 (Dooms' Rise)",
+      "sort_key": 2025.01,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "storm",
+          "role": "instigator"
+        },
+        {
+          "entity": "krakoa",
+          "role": "victim"
+        },
+        {
+          "entity": "arakko",
+          "role": "victim"
+        },
+        {
+          "entity": "magneto",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "wiki-te",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "loki-seizes-yggsgard",
+      "timeline": "present",
+      "title": "Loki seizes Yggsgard and banishes Thor",
+      "summary": "Chronovium-infused sap from the overgrown World Tree showed Loki a future in which he ruled. With Karnilla and Hela he put Odin into the Odinsleep, overpowered Thor and sent him through a portal into another timeline.",
+      "date_label": "Dooms' Rise",
+      "sort_key": 2025.02,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "loki",
+          "role": "instigator"
+        },
+        {
+          "entity": "hela",
+          "role": "ally"
+        },
+        {
+          "entity": "thor",
+          "role": "victim"
+        },
+        {
+          "entity": "yggsgard",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "spider-zero-banished",
+      "timeline": "timeline-2099",
+      "title": "The Master Weaver banishes Spider-Zero",
+      "summary": "A huge temporal rift opened over Tokyo 2099, and the Master Weaver wanted to use its energy for the Web of Life and Destiny. Spider-Zero objected because of the danger to civilians and was banished from the Spider-Islands, so she began to gather the Web-Warriors.",
+      "date_label": "2099 (Dooms' Rise)",
+      "sort_key": 2025.025,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "master-weaver",
+          "role": "instigator"
+        },
+        {
+          "entity": "spider-zero",
+          "role": "victim"
+        },
+        {
+          "entity": "web-warriors",
+          "role": "ally"
+        },
+        {
+          "entity": "peni-parker",
+          "role": "ally"
+        },
+        {
+          "entity": "spider-man",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "official-home",
+        "wiki-galacta"
+      ]
+    },
+    {
+      "slug": "widow-frees-captain-america",
+      "timeline": "timeline-2099",
+      "title": "Black Widow frees Captain America from Alchemax",
+      "summary": "Following a tip about a guarded asset, Natalia Romanova broke into Alchemax and found Steve Rogers frozen. She woke him, and they fought the Public Eye before Wolverine healed Cap with Krakoan flowers and took him to Wakanda.",
+      "date_label": "2099 (Dooms' Rise)",
+      "sort_key": 2025.03,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "black-widow",
+          "role": "instigator"
+        },
+        {
+          "entity": "captain-america",
+          "role": "ally"
+        },
+        {
+          "entity": "wolverine",
+          "role": "ally"
+        },
+        {
+          "entity": "alchemax",
+          "role": "enemy"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "wiki-2099"
+      ]
+    },
+    {
+      "slug": "enhanced-cerebro",
+      "timeline": "timeline-2099",
+      "title": "Magneto and Scarlet Witch forge an enhanced Cerebro",
+      "summary": "Scarlet Witch, Magik and Wolverine reached Krakoa from the Collapsed Timeline. Wanda and Magneto built a version of Cerebro powered by chaos magic, which let them summon mutants from nearby realities to Krakoa.",
+      "date_label": "2099 (Dooms' Rise)",
+      "sort_key": 2025.035,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "magneto",
+          "role": "instigator"
+        },
+        {
+          "entity": "scarlet-witch",
+          "role": "ally"
+        },
+        {
+          "entity": "magik",
+          "role": "ally"
+        },
+        {
+          "entity": "wolverine",
+          "role": "ally"
+        },
+        {
+          "entity": "cerebro",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "hydra-base-escape",
+      "timeline": "present",
+      "title": "Escape from Hydra Charteris Base",
+      "summary": "Winter Soldier was captured while spying on Hydra's base, and Hawkeye came to rescue him. To close the portal to Hydra's ancient creature, Hawkeye cut off Bucky's tentacled arm, and Captain America then led them through a portal to Wakanda.",
+      "date_label": "Dooms' Rise",
+      "sort_key": 2025.04,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "winter-soldier",
+          "role": "victim"
+        },
+        {
+          "entity": "hawkeye",
+          "role": "ally"
+        },
+        {
+          "entity": "captain-america",
+          "role": "ally"
+        },
+        {
+          "entity": "hydra",
+          "role": "enemy"
+        },
+        {
+          "entity": "hydra-charteris-base",
+          "role": "witness"
+        },
+        {
+          "entity": "shuri",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s0",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "thor-at-bloodstone-manor",
+      "timeline": "collapsed",
+      "title": "Thor recovers at Bloodstone Manor",
+      "summary": "Banished into the Collapsed Timeline, Thor met Bruce Banner, who sent him to rest at Bloodstone Manor. There Thor cut Cullen Bloodstone's bond to the parasite Glartrox, which Elsa captured for her own use.",
+      "date_label": "After Thor's banishment",
+      "sort_key": 2025.045,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "thor",
+          "role": "ally"
+        },
+        {
+          "entity": "hulk",
+          "role": "ally"
+        },
+        {
+          "entity": "elsa-bloodstone",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-collapsed",
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "first-klyntar-mission",
+      "timeline": "mosaic",
+      "title": "The Guardians' first mission to Klyntar",
+      "summary": "Shuri sent the Guardians to find the source of a spreading darkness, and the Milano crash-landed on Klyntar. With Venom they found the Codex of the dead Celestial and turned it into a bomb, but Knull survived.",
+      "date_label": "Dooms' Rise",
+      "sort_key": 2025.05,
+      "era": "Season 0: Dooms' Rise",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "guardians-of-the-galaxy",
+          "role": "ally"
+        },
+        {
+          "entity": "star-lord",
+          "role": "ally"
+        },
+        {
+          "entity": "venom",
+          "role": "ally"
+        },
+        {
+          "entity": "knull",
+          "role": "enemy"
+        },
+        {
+          "entity": "shuri",
+          "role": "instigator"
+        },
+        {
+          "entity": "klyntar",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s3",
+        "official-home",
+        "wiki-starlord-lore"
+      ]
+    },
+    {
+      "slug": "eternal-night-falls",
+      "timeline": "present",
+      "title": "Dracula plunges New York into eternal night",
+      "summary": "Doctor Doom gave Dracula a Chronovium shard and told him that a drop of his blood would let him control time over a city. Dracula stopped the moon over New York, and vampires took to the streets.",
+      "date_label": "Eternal Night Falls",
+      "sort_key": 2025.1,
+      "era": "Season 1: Eternal Night Falls",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "dracula",
+          "role": "instigator"
+        },
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "blood-chronovium",
+          "role": "witness"
+        },
+        {
+          "entity": "empire-of-eternal-night",
+          "role": "witness"
+        },
+        {
+          "entity": "fantastic-four",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s1",
+        "official-home",
+        "wiki-doom"
+      ]
+    },
+    {
+      "slug": "strange-wins-darkhold",
+      "timeline": "present",
+      "title": "Strange wins the Darkhold from Khonshu",
+      "summary": "Trapped in the Astral Plane, Strange found that Khonshu had the Darkhold and wanted to use the Montesi Formula to destroy all vampires, turned civilians included. Strange won the book and his freedom in a game, but its pages scattered as he escaped.",
+      "date_label": "Eternal Night Falls",
+      "sort_key": 2025.11,
+      "era": "Season 1: Eternal Night Falls",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "doctor-strange",
+          "role": "instigator"
+        },
+        {
+          "entity": "khonshu",
+          "role": "rival"
+        },
+        {
+          "entity": "scarlet-witch",
+          "role": "ally"
+        },
+        {
+          "entity": "darkhold",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s1",
+        "wiki-s0"
+      ]
+    },
+    {
+      "slug": "dracula-captures-blade",
+      "timeline": "present",
+      "title": "Dracula captures Blade",
+      "summary": "Spider-Man and Blade fought vampires in Central Park until Dracula himself defeated them and carried Blade away. Dracula drained him over and over to try to make his minions into Daywalkers.",
+      "date_label": "Eternal Night Falls",
+      "sort_key": 2025.12,
+      "era": "Season 1: Eternal Night Falls",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "dracula",
+          "role": "instigator"
+        },
+        {
+          "entity": "blade",
+          "role": "victim"
+        },
+        {
+          "entity": "spider-man",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s1",
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "black-panther-turned",
+      "timeline": "present",
+      "title": "Black Panther becomes a vampire",
+      "summary": "T'Challa came to New York with a Heart-Shaped Herb to help cure vampirism. Dracula's fangs could not pierce his armor, so Dracula used his Blood Chronovium instead, and T'Challa changed in body but resisted Dracula's control.",
+      "date_label": "Eternal Night Falls",
+      "sort_key": 2025.13,
+      "era": "Season 1: Eternal Night Falls",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "black-panther",
+          "role": "victim"
+        },
+        {
+          "entity": "dracula",
+          "role": "instigator"
+        },
+        {
+          "entity": "heart-shaped-herb",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s1",
+        "wiki-bp-lore"
+      ]
+    },
+    {
+      "slug": "eternity-knights-formed",
+      "timeline": "present",
+      "title": "Moon Knight forms the Eternity Knights",
+      "summary": "Moon Knight formed an alliance with Iron Man, Wolverine, Winter Soldier, Adam Warlock and Psylocke to slay vampires, whether or not they had been civilians. They ran into a vampire faction led by Black Panther.",
+      "date_label": "Eternal Night Falls",
+      "sort_key": 2025.14,
+      "era": "Season 1: Eternal Night Falls",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "moon-knight",
+          "role": "leader"
+        },
+        {
+          "entity": "eternity-knights",
+          "role": "ally"
+        },
+        {
+          "entity": "iron-man",
+          "role": "ally"
+        },
+        {
+          "entity": "black-panther",
+          "role": "rival"
+        }
+      ],
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "slug": "dracula-defeated",
+      "timeline": "present",
+      "title": "Dracula falls and Doom claims Pure Blood Chronovium",
+      "summary": "The heroes freed Ratatoskr, who broke the barrier around Dracula's castle in Central Park, and they defeated Dracula. Doom had secretly helped them so that he could seize Dracula's essence as Pure Blood Chronovium.",
+      "date_label": "Eternal Night Falls",
+      "sort_key": 2025.18,
+      "era": "Season 1: Eternal Night Falls",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "dracula",
+          "role": "victim"
+        },
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "ratatoskr",
+          "role": "ally"
+        },
+        {
+          "entity": "human-torch",
+          "role": "ally"
+        },
+        {
+          "entity": "invisible-woman",
+          "role": "ally"
+        },
+        {
+          "entity": "blood-chronovium",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s1",
+        "wiki-doom",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "hellfire-gala-attack",
+      "timeline": "timeline-2099",
+      "title": "Ultron crashes the Hellfire Gala",
+      "summary": "Emma Frost threw a Hellfire Gala to reintroduce Krakoa, and Doom 2099 attended to reach the island's chronal energy. Ultron, back after seventy years in space, invaded through the Krakoan gateways and killed Magneto, who was resurrected.",
+      "date_label": "2099 (Hellfire Gala)",
+      "sort_key": 2025.2,
+      "era": "Season 2: Hellfire Gala",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "emma-frost",
+          "role": "instigator"
+        },
+        {
+          "entity": "ultron",
+          "role": "enemy"
+        },
+        {
+          "entity": "doom-2099",
+          "role": "witness"
+        },
+        {
+          "entity": "magneto",
+          "role": "victim"
+        },
+        {
+          "entity": "krakoa",
+          "role": "witness"
+        },
+        {
+          "entity": "x-men",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s2",
+        "official-home",
+        "wiki-doom2099"
+      ]
+    },
+    {
+      "slug": "x-tron-born",
+      "timeline": "timeline-2099",
+      "title": "Ultron is reborn as X-Tron",
+      "summary": "The heroes beat Ultron, but he had already hacked the Resurrection Protocols to grow a new body. As X-Tron he took Cerebro and fled to Arakko, while Tony Stark rebooted Ultron's old body behind a firewall.",
+      "date_label": "2099 (Hellfire Gala)",
+      "sort_key": 2025.22,
+      "era": "Season 2: Hellfire Gala",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "x-tron",
+          "role": "instigator"
+        },
+        {
+          "entity": "ultron",
+          "role": "instigator"
+        },
+        {
+          "entity": "iron-man",
+          "role": "ally"
+        },
+        {
+          "entity": "cerebro",
+          "role": "witness"
+        },
+        {
+          "entity": "arakko",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "slug": "doom-2099-erases-x-tron",
+      "timeline": "timeline-2099",
+      "title": "Doom 2099 erases X-Tron",
+      "summary": "Under a secret pact with Emma Frost, Doom 2099 drew the poisoning chronal energy out of Krakoa. After Magneto ripped Cerebro from X-Tron, Doom used that energy to erase X-Tron from existence, then turned on the heroes; the old Ultron stabbed him, but it was only a Doombot.",
+      "date_label": "2099 (Hellfire Gala)",
+      "sort_key": 2025.26,
+      "era": "Season 2: Hellfire Gala",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "doom-2099",
+          "role": "instigator"
+        },
+        {
+          "entity": "x-tron",
+          "role": "victim"
+        },
+        {
+          "entity": "emma-frost",
+          "role": "ally"
+        },
+        {
+          "entity": "magneto",
+          "role": "ally"
+        },
+        {
+          "entity": "ultron",
+          "role": "rival"
+        }
+      ],
+      "sources": [
+        "wiki-s2",
+        "wiki-doom2099"
+      ]
+    },
+    {
+      "slug": "hela-queen-in-black",
+      "timeline": "mosaic",
+      "title": "Hela becomes the Queen in Black",
+      "summary": "Angry that Loki had joined the heroes, Hela answered Knull's whispers and went to Klyntar. Knull made her his Queen in Black and gave her great power to guard the planet against the oncoming Phoenix.",
+      "date_label": "The Abyss Awakens",
+      "sort_key": 2025.3,
+      "era": "Season 3: The Abyss Awakens",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "hela",
+          "role": "instigator"
+        },
+        {
+          "entity": "knull",
+          "role": "ally"
+        },
+        {
+          "entity": "klyntar",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "phoenix-purifies-bast",
+      "timeline": "mosaic",
+      "title": "The Phoenix cleanses Bast",
+      "summary": "Racing through the Divine Space toward Klyntar, the Phoenix met Bast and other gods that Knull had corrupted and burned the corruption out of them. Bast then sent Shuri to recruit warriors, starting with Blade.",
+      "date_label": "The Abyss Awakens",
+      "sort_key": 2025.31,
+      "era": "Season 3: The Abyss Awakens",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "phoenix",
+          "role": "ally"
+        },
+        {
+          "entity": "bast",
+          "role": "victim"
+        },
+        {
+          "entity": "shuri",
+          "role": "ally"
+        },
+        {
+          "entity": "blade",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "phoenix-egg-shatters",
+      "timeline": "mosaic",
+      "title": "The Phoenix Egg shatters and Knull is freed",
+      "summary": "Overwhelmed by Hela, the Phoenix sealed itself in an egg. A Celestial weapon that Tony Stark triggered by accident shattered the egg, which tore open Klyntar and freed Knull, while shards of the Phoenix Force bonded with several heroes.",
+      "date_label": "The Abyss Awakens",
+      "sort_key": 2025.33,
+      "era": "Season 3: The Abyss Awakens",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "phoenix",
+          "role": "victim"
+        },
+        {
+          "entity": "hela",
+          "role": "enemy"
+        },
+        {
+          "entity": "iron-man",
+          "role": "witness"
+        },
+        {
+          "entity": "knull",
+          "role": "instigator"
+        },
+        {
+          "entity": "venom",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "slug": "knull-defeated",
+      "timeline": "mosaic",
+      "title": "Knull is swapped into the White Hot Room",
+      "summary": "After Venom failed to beat Knull with the Phoenix-charged Sword of Dracula, Rocket planned a quantum swap. Jean Grey let herself be struck down to be reborn in the White Hot Room, and Rocket's devices swapped her with Knull, who was destroyed.",
+      "date_label": "The Abyss Awakens",
+      "sort_key": 2025.36,
+      "era": "Season 3: The Abyss Awakens",
+      "importance": 5,
+      "participants": [
+        {
+          "entity": "knull",
+          "role": "victim"
+        },
+        {
+          "entity": "rocket-raccoon",
+          "role": "instigator"
+        },
+        {
+          "entity": "phoenix",
+          "role": "ally"
+        },
+        {
+          "entity": "venom",
+          "role": "ally"
+        },
+        {
+          "entity": "scarlet-witch",
+          "role": "ally"
+        },
+        {
+          "entity": "all-black",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s3",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "hela-flees-to-eighth-city",
+      "timeline": "collapsed",
+      "title": "Hela seeks sanctuary in the Eighth City",
+      "summary": "After Blade drained her blood and beat her, Hela feared Knull's revenge and fled. Dizang let her into the Eighth City but kept her sealed in a cell until she could be trusted.",
+      "date_label": "The Abyss Awakens",
+      "sort_key": 2025.37,
+      "era": "Season 3: The Abyss Awakens",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "hela",
+          "role": "victim"
+        },
+        {
+          "entity": "daredevil",
+          "role": "witness"
+        },
+        {
+          "entity": "eighth-city",
+          "role": "witness"
+        },
+        {
+          "entity": "blade",
+          "role": "enemy"
+        }
+      ],
+      "sources": [
+        "wiki-s3",
+        "wiki-s4"
+      ]
+    },
+    {
+      "slug": "doom-invades-kun-lun",
+      "timeline": "collapsed",
+      "title": "Doom invades K'un-Lun for Shou-Lao's chi",
+      "summary": "The Entanglement fused K'un-Lun with the other Capital Cities into the Heart of Heaven and froze Shou-Lao. While Lin Lie was away, Doom invaded to take the chronal-infused chi in the dragon's heart, and the heroes used an ancient rite to wake Shou-Lao.",
+      "date_label": "Heart of the Dragon",
+      "sort_key": 2025.4,
+      "era": "Season 4: Heart of the Dragon",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "shou-lao",
+          "role": "victim"
+        },
+        {
+          "entity": "iron-fist",
+          "role": "ally"
+        },
+        {
+          "entity": "kun-lun",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s4",
+        "official-home",
+        "wiki-te"
+      ]
+    },
+    {
+      "slug": "shenloong-tournament",
+      "timeline": "collapsed",
+      "title": "The Shenloong Tournament",
+      "summary": "Doom challenged Lin Lie's right to the title, and Shou-Lao invoked an old law that called a tournament of Immortal Weapons. In the final, Daredevil knocked the Fu Xi shards from Lin Lie's arms, but this unblocked his chi and he won as the true Iron Fist.",
+      "date_label": "Heart of the Dragon",
+      "sort_key": 2025.45,
+      "era": "Season 4: Heart of the Dragon",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "iron-fist",
+          "role": "ally"
+        },
+        {
+          "entity": "daredevil",
+          "role": "rival"
+        },
+        {
+          "entity": "shou-lao",
+          "role": "witness"
+        },
+        {
+          "entity": "loki",
+          "role": "rival"
+        },
+        {
+          "entity": "grandmaster",
+          "role": "witness"
+        },
+        {
+          "entity": "sword-of-fu-xi",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s4",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "loki-steals-chi",
+      "timeline": "collapsed",
+      "title": "Loki steals Shou-Lao's chi for Doom",
+      "summary": "Loki hid cloaked during the Trial of Wisdom, then stabbed Shou-Lao's heart when Lin Lie hesitated to claim the prize. He moved the chi into Doom, and Doom paid him with a Phoenix Feather.",
+      "date_label": "Heart of the Dragon",
+      "sort_key": 2025.47,
+      "era": "Season 4: Heart of the Dragon",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "loki",
+          "role": "instigator"
+        },
+        {
+          "entity": "victor-von-doom",
+          "role": "ally"
+        },
+        {
+          "entity": "shou-lao",
+          "role": "victim"
+        },
+        {
+          "entity": "iron-fist",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s4",
+        "wiki-doom"
+      ]
+    },
+    {
+      "slug": "grandmaster-hires-gambit",
+      "timeline": "beyond-the-chronoverses",
+      "title": "The Grandmaster hires Gambit",
+      "summary": "The Grandmaster saw a contract signed 'von Doom' in the Collector's Gallery and wanted it as a bargaining chip. He offered Gambit Chronovium wedding rings and a honeymoon in the Grand Garden if he stole it.",
+      "date_label": "Love is a Battlefield",
+      "sort_key": 2025.5,
+      "era": "Season 5: Love is a Battlefield",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "grandmaster",
+          "role": "instigator"
+        },
+        {
+          "entity": "gambit",
+          "role": "ally"
+        },
+        {
+          "entity": "rogue",
+          "role": "witness"
+        },
+        {
+          "entity": "doom-contract",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s5"
+      ]
+    },
+    {
+      "slug": "doom-2099-seeks-cynthia",
+      "timeline": "timeline-2099",
+      "title": "Doom 2099 hunts for the woman in his visions",
+      "summary": "Doom 2099 had given up his early memories for power, but after the Entanglement he began to see a woman calling to him from a hellish realm. In a broken Chronovium shard he saw a contract bearing the name Cynthia and traced it to the Collector.",
+      "date_label": "2099 (Love is a Battlefield)",
+      "sort_key": 2025.51,
+      "era": "Season 5: Love is a Battlefield",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "doom-2099",
+          "role": "instigator"
+        },
+        {
+          "entity": "cynthia-von-doom",
+          "role": "victim"
+        },
+        {
+          "entity": "the-collector",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s5",
+        "wiki-doom2099"
+      ]
+    },
+    {
+      "slug": "rogue-absorbs-chronovium",
+      "timeline": "beyond-the-chronoverses",
+      "title": "Rogue absorbs Chronovium and the heist goes wrong",
+      "summary": "Gambit stole a fake contract while the Collector was distracted by a contest. Rogue touched his Chronovium die and absorbed its energy, which withered the Grand Garden and destroyed their way home, and it let them reach the real contract.",
+      "date_label": "Love is a Battlefield",
+      "sort_key": 2025.53,
+      "era": "Season 5: Love is a Battlefield",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "rogue",
+          "role": "victim"
+        },
+        {
+          "entity": "gambit",
+          "role": "instigator"
+        },
+        {
+          "entity": "magneto",
+          "role": "witness"
+        },
+        {
+          "entity": "the-collector",
+          "role": "enemy"
+        },
+        {
+          "entity": "grand-garden",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s5"
+      ]
+    },
+    {
+      "slug": "museum-breakout",
+      "timeline": "beyond-the-chronoverses",
+      "title": "Deadpool frees the Museum of Contemplation",
+      "summary": "Ordered to capture Gambit and Rogue, Deadpool switched sides and smashed the display cases to free their prisoners. Elsa Bloodstone and Devil Dinosaur beat a Brood Queen, and the heroes escaped the Museum.",
+      "date_label": "Night at the Museum",
+      "sort_key": 2025.55,
+      "era": "Season 6: Night at the Museum",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "deadpool",
+          "role": "instigator"
+        },
+        {
+          "entity": "elsa-bloodstone",
+          "role": "ally"
+        },
+        {
+          "entity": "devil-dinosaur",
+          "role": "ally"
+        },
+        {
+          "entity": "the-collector",
+          "role": "enemy"
+        },
+        {
+          "entity": "jeff-the-land-shark",
+          "role": "ally"
+        },
+        {
+          "entity": "museum-of-contemplation",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s6",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "grand-garden-restored",
+      "timeline": "beyond-the-chronoverses",
+      "title": "Mantis and Loki restore the Grand Garden",
+      "summary": "An invisible barrier trapped the Guardians in the Grand Garden. Mantis and Loki combined healing and Asgardian magic to bring the garden back, so the Gardener let them go, but Loki secretly planted a sapling for his own ends.",
+      "date_label": "Night at the Museum",
+      "sort_key": 2025.555,
+      "era": "Season 6: Night at the Museum",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "mantis",
+          "role": "ally"
+        },
+        {
+          "entity": "loki",
+          "role": "ally"
+        },
+        {
+          "entity": "guardians-of-the-galaxy",
+          "role": "witness"
+        },
+        {
+          "entity": "grand-garden",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s6",
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "gambit-rogue-wedding",
+      "timeline": "timeline-2099",
+      "title": "Gambit and Rogue complete their wedding",
+      "summary": "Once Rogue could control her new power, she was allowed back on Krakoa, and the couple finished their wedding. Emma Frost helped turn the Chronovium die into a new ring.",
+      "date_label": "2099 (Night at the Museum)",
+      "sort_key": 2025.56,
+      "era": "Season 6: Night at the Museum",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "gambit",
+          "role": "ally"
+        },
+        {
+          "entity": "rogue",
+          "role": "ally"
+        },
+        {
+          "entity": "emma-frost",
+          "role": "ally"
+        },
+        {
+          "entity": "krakoa",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s6"
+      ]
+    },
+    {
+      "slug": "doom-2099-takes-contract",
+      "timeline": "timeline-2099",
+      "title": "Doom 2099 takes the contract",
+      "summary": "Doom 2099 broke into Rogue's room on Krakoa, disabled her powers and found the contract, then wept on reading Cynthia von Doom's name. When Rogue touched him she found no memories at all, and she passed out as he fled with it.",
+      "date_label": "2099 (Night at the Museum)",
+      "sort_key": 2025.565,
+      "era": "Season 6: Night at the Museum",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "doom-2099",
+          "role": "instigator"
+        },
+        {
+          "entity": "rogue",
+          "role": "victim"
+        },
+        {
+          "entity": "doom-contract",
+          "role": "witness"
+        },
+        {
+          "entity": "cynthia-von-doom",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s6",
+        "wiki-doom2099"
+      ]
+    },
+    {
+      "slug": "monster-kingdom-founded",
+      "timeline": "present",
+      "title": "Deadpool founds his Monster Kingdom",
+      "summary": "Elsa persuaded Deadpool to care for the creatures freed from the Collector. Magik and Scarlet Witch opened a portal to his home timeline, where he set up his Monster Kingdom.",
+      "date_label": "Night at the Museum",
+      "sort_key": 2025.57,
+      "era": "Season 6: Night at the Museum",
+      "importance": 1,
+      "participants": [
+        {
+          "entity": "deadpool",
+          "role": "leader"
+        },
+        {
+          "entity": "elsa-bloodstone",
+          "role": "ally"
+        },
+        {
+          "entity": "magik",
+          "role": "ally"
+        },
+        {
+          "entity": "scarlet-witch",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s6",
+        "wiki-present"
+      ]
+    },
+    {
+      "slug": "alchemax-captures-moon-girl",
+      "timeline": "timeline-2099",
+      "title": "Alchemax captures Moon Girl and Cyclops",
+      "summary": "The Entanglement threw Moon Girl into 2099, where Alchemax tracked her and Cyclops by their time signatures. Cyclops was forced to charge Chronovium with his optic blasts, and Moon Girl was made to study the resulting Punch Chronovium.",
+      "date_label": "2099 (Sins of Alchemax)",
+      "sort_key": 2025.58,
+      "era": "Season 8: Sins of Alchemax",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "moon-girl",
+          "role": "victim"
+        },
+        {
+          "entity": "cyclops",
+          "role": "victim"
+        },
+        {
+          "entity": "alchemax",
+          "role": "instigator"
+        },
+        {
+          "entity": "punch-chronovium",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s8",
+        "wiki-moongirl"
+      ]
+    },
+    {
+      "slug": "alchemax-incursion",
+      "timeline": "present",
+      "title": "Alchemax HQ invades Lower Manhattan",
+      "summary": "Tyler Stone planned to beat the mutants by selling future goods to the past. Moon Girl's activation of the crystal carried Alchemax HQ into present-day New York, and a chronal plague began turning Lower Manhattan into Nueva York.",
+      "date_label": "The Hunt Is On",
+      "sort_key": 2025.6,
+      "era": "Season 7: The Hunt Is On",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "alchemax",
+          "role": "instigator"
+        },
+        {
+          "entity": "tyler-stone",
+          "role": "instigator"
+        },
+        {
+          "entity": "moon-girl",
+          "role": "witness"
+        },
+        {
+          "entity": "punch-chronovium",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s8",
+        "wiki-s7",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "super-hero-ban",
+      "timeline": "present",
+      "title": "Mayor Fisk's Super Hero Ban",
+      "summary": "Mayor Fisk locked down Lower Manhattan, banned vigilantes and held arrested heroes in the Vault. He also made a secret deal with the Gilded Saint to undo the chronal damage in exchange for the Tablet of Life and Time.",
+      "date_label": "The Hunt Is On",
+      "sort_key": 2025.61,
+      "era": "Season 7: The Hunt Is On",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "kingpin",
+          "role": "instigator"
+        },
+        {
+          "entity": "captain-america",
+          "role": "victim"
+        },
+        {
+          "entity": "luna-snow",
+          "role": "victim"
+        },
+        {
+          "entity": "the-vault",
+          "role": "witness"
+        },
+        {
+          "entity": "tiger-division",
+          "role": "enemy"
+        }
+      ],
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "vault-breakout",
+      "timeline": "present",
+      "title": "The Vault breakout",
+      "summary": "Black Cat and Spider-Man used the delivery of the Tablet as a Trojan horse to break the captive heroes out of the Vault. Parker Robbins found the Cloak of Oblivion in the chaos, and Dracula also escaped.",
+      "date_label": "The Hunt Is On",
+      "sort_key": 2025.63,
+      "era": "Season 7: The Hunt Is On",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "black-cat",
+          "role": "instigator"
+        },
+        {
+          "entity": "spider-man",
+          "role": "instigator"
+        },
+        {
+          "entity": "captain-america",
+          "role": "ally"
+        },
+        {
+          "entity": "the-hood",
+          "role": "witness"
+        },
+        {
+          "entity": "dracula",
+          "role": "witness"
+        },
+        {
+          "entity": "the-vault",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s7",
+        "wiki-blood-hunt",
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "doom-gets-tablet",
+      "timeline": "present",
+      "title": "Black Cat trades the Tablet of Life and Time to Doom",
+      "summary": "Black Cat gave Fisk a replica, swapped by Rocket's Nega-Energy Replicator, and kept the real Tablet. Doom offered her immortality for it, but she asked him to free the Thieves Guild from the Gilded Saint instead, and she became Guildmaster.",
+      "date_label": "The Hunt Is On",
+      "sort_key": 2025.64,
+      "era": "Season 7: The Hunt Is On",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "black-cat",
+          "role": "ally"
+        },
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "tablet-of-life-and-time",
+          "role": "witness"
+        },
+        {
+          "entity": "thieves-guild",
+          "role": "witness"
+        },
+        {
+          "entity": "rocket-raccoon",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s7",
+        "wiki-doom"
+      ]
+    },
+    {
+      "slug": "blood-hunt",
+      "timeline": "present",
+      "title": "The Blood Hunt",
+      "summary": "Dracula used a Norn Stone from the Vault to raise a new army and turned Ratatoskr into a vampire. A squad of Blade, Punisher, Thor, Squirrel Girl and Jeff hunted him down, and Blade cut out the stone, turning Dracula to stone.",
+      "date_label": "Blood Hunt (The Hunt Is On)",
+      "sort_key": 2025.66,
+      "era": "Season 7: The Hunt Is On",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "dracula",
+          "role": "instigator"
+        },
+        {
+          "entity": "blade",
+          "role": "ally"
+        },
+        {
+          "entity": "the-punisher",
+          "role": "ally"
+        },
+        {
+          "entity": "thor",
+          "role": "ally"
+        },
+        {
+          "entity": "squirrel-girl",
+          "role": "ally"
+        },
+        {
+          "entity": "jeff-the-land-shark",
+          "role": "ally"
+        },
+        {
+          "entity": "norn-stone",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "slug": "kingpin-ousted",
+      "timeline": "present",
+      "title": "Kingpin is driven from office",
+      "summary": "Fisk ambushed the tired heroes in Times Square after the Blood Hunt, and they defeated him in public. Shamed, he stepped down as mayor.",
+      "date_label": "Blood Hunt (The Hunt Is On)",
+      "sort_key": 2025.67,
+      "era": "Season 7: The Hunt Is On",
+      "importance": 2,
+      "participants": [
+        {
+          "entity": "kingpin",
+          "role": "victim"
+        },
+        {
+          "entity": "blade",
+          "role": "enemy"
+        },
+        {
+          "entity": "daredevil",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-blood-hunt",
+        "wiki-s7"
+      ]
+    },
+    {
+      "slug": "doom-2099-alchemax-deal",
+      "timeline": "timeline-2099",
+      "title": "Doom 2099 seals his deal with Alchemax",
+      "summary": "Doom 2099 had given Alchemax Chronovium to study, and in return he crippled the Hellfire Trading Company by draining Krakoa. Tyler Stone handed him a Punch Chronovium crystal to close the deal.",
+      "date_label": "2099 (Sins of Alchemax)",
+      "sort_key": 2025.7,
+      "era": "Season 8: Sins of Alchemax",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "doom-2099",
+          "role": "instigator"
+        },
+        {
+          "entity": "tyler-stone",
+          "role": "ally"
+        },
+        {
+          "entity": "punch-chronovium",
+          "role": "witness"
+        },
+        {
+          "entity": "emma-frost",
+          "role": "enemy"
+        }
+      ],
+      "sources": [
+        "wiki-s8",
+        "wiki-doom2099"
+      ]
+    },
+    {
+      "slug": "white-phoenix",
+      "timeline": "present",
+      "title": "Jean frees Cyclops and becomes the White Phoenix",
+      "summary": "During the raid on Alchemax HQ, Jean Grey found Scott held in ruby quartz, unable to close his eyes. She absorbed his endless optic energy, which healed him and restored the weakened Phoenix Force as the White Phoenix.",
+      "date_label": "Sins of Alchemax",
+      "sort_key": 2025.71,
+      "era": "Season 8: Sins of Alchemax",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "phoenix",
+          "role": "ally"
+        },
+        {
+          "entity": "cyclops",
+          "role": "victim"
+        },
+        {
+          "entity": "rogue",
+          "role": "ally"
+        },
+        {
+          "entity": "alchemax",
+          "role": "enemy"
+        }
+      ],
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "slug": "alchemax-returned",
+      "timeline": "present",
+      "title": "Alchemax HQ is sent back to 2099",
+      "summary": "Devil Dinosaur in Chrono-Armor and the Punisher led the charge into Alchemax HQ, where they gave Moon Girl a miniature TRD. The Punisher stayed behind and used it to send the building, and himself, back to 2099.",
+      "date_label": "Sins of Alchemax",
+      "sort_key": 2025.72,
+      "era": "Season 8: Sins of Alchemax",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "the-punisher",
+          "role": "instigator"
+        },
+        {
+          "entity": "devil-dinosaur",
+          "role": "ally"
+        },
+        {
+          "entity": "moon-girl",
+          "role": "ally"
+        },
+        {
+          "entity": "deadpool",
+          "role": "ally"
+        },
+        {
+          "entity": "timestream-reintegration-device",
+          "role": "witness"
+        },
+        {
+          "entity": "alchemax",
+          "role": "victim"
+        }
+      ],
+      "sources": [
+        "wiki-s8",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "jubilee-joins-apocalypse",
+      "timeline": "collapsed",
+      "title": "Jubilee becomes the Horseman of Famine",
+      "summary": "Searching for a cure for Shogo, Jubilee went to the Collapsed Timeline and met Apocalypse. He promised to restore her son if she served as his Horseman of Famine, and she gained power at the cost of a burning hunger.",
+      "date_label": "Sins of Alchemax",
+      "sort_key": 2025.73,
+      "era": "Season 8: Sins of Alchemax",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "jubilee",
+          "role": "ally"
+        },
+        {
+          "entity": "apocalypse",
+          "role": "instigator"
+        },
+        {
+          "entity": "shogo-lee",
+          "role": "witness"
+        },
+        {
+          "entity": "horsemen-of-death",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s9",
+        "wiki-s8",
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "slug": "apocalypse-murdered",
+      "timeline": "collapsed",
+      "title": "Apocalypse is murdered",
+      "summary": "On the day of his ascension through the Faith-Harvesting Engine, Apocalypse was impaled by a pitch-black sword. The Lazarus Chamber could not revive him, and a storm sealed his pyramid with the heroes and the killer inside.",
+      "date_label": "The Mystery of Thebes",
+      "sort_key": 2025.8,
+      "era": "Season 9: The Mystery of Thebes",
+      "importance": 5,
+      "participants": [
+        {
+          "entity": "apocalypse",
+          "role": "victim"
+        },
+        {
+          "entity": "jubilee",
+          "role": "witness"
+        },
+        {
+          "entity": "gorr",
+          "role": "instigator"
+        },
+        {
+          "entity": "thebes",
+          "role": "witness"
+        },
+        {
+          "entity": "faith-harvesting-engine",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s9",
+        "official-home"
+      ]
+    },
+    {
+      "slug": "thebes-investigation",
+      "timeline": "collapsed",
+      "title": "Murders in the sealed pyramid",
+      "summary": "Trapped heroes searched for the killer while new deaths struck: Winter Soldier's arm drained Wolverine, Loki killed Psylocke, and The Hood shot Gambit. Jubilee revived each with Death Seeds, and the clues pointed to All-Black and the God Butcher.",
+      "date_label": "The Mystery of Thebes",
+      "sort_key": 2025.82,
+      "era": "Season 9: The Mystery of Thebes",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "emma-frost",
+          "role": "leader"
+        },
+        {
+          "entity": "daredevil",
+          "role": "ally"
+        },
+        {
+          "entity": "wolverine",
+          "role": "victim"
+        },
+        {
+          "entity": "psylocke",
+          "role": "victim"
+        },
+        {
+          "entity": "gambit",
+          "role": "victim"
+        },
+        {
+          "entity": "winter-soldier",
+          "role": "instigator"
+        },
+        {
+          "entity": "loki",
+          "role": "instigator"
+        },
+        {
+          "entity": "the-hood",
+          "role": "instigator"
+        },
+        {
+          "entity": "jubilee",
+          "role": "ally"
+        }
+      ],
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "doom-2099-steals-tablet-of-death",
+      "timeline": "present",
+      "title": "Doom 2099 snatches the Tablet of Death and Entropy",
+      "summary": "The Hood gave the heroes the Tablet, then stole it back while Moon Knight's ritual raised crying spirits. Back in the Bronx, Doom 2099 stepped out of a portal and took it from him.",
+      "date_label": "The Mystery of Thebes",
+      "sort_key": 2025.84,
+      "era": "Season 9: The Mystery of Thebes",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "the-hood",
+          "role": "victim"
+        },
+        {
+          "entity": "doom-2099",
+          "role": "instigator"
+        },
+        {
+          "entity": "moon-knight",
+          "role": "witness"
+        },
+        {
+          "entity": "tablet-of-death-and-entropy",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "khonshu-exposed",
+      "timeline": "collapsed",
+      "title": "Moon Knight exposes Khonshu",
+      "summary": "Moon Knight found that Khonshu had caused massacres so that his victims' hatred would flow to Apocalypse and draw Gorr to him. Confronted, Khonshu absorbed the Engine's unpurified faith, but Gorr broke into Thebes, impaled him and dragged him and the Engine away.",
+      "date_label": "The Mystery of Thebes",
+      "sort_key": 2025.86,
+      "era": "Season 9: The Mystery of Thebes",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "moon-knight",
+          "role": "instigator"
+        },
+        {
+          "entity": "khonshu",
+          "role": "victim"
+        },
+        {
+          "entity": "gorr",
+          "role": "enemy"
+        },
+        {
+          "entity": "jubilee",
+          "role": "ally"
+        },
+        {
+          "entity": "faith-harvesting-engine",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "slug": "gorr-attacks-yggsgard",
+      "timeline": "present",
+      "title": "Gorr kills Loki and shatters Mjolnir",
+      "summary": "Gorr destroyed the Bifrost and killed Loki with All-Black. The battle with Thor spread to New York, where the Avengers fell, Captain America's shield broke, and Gorr shattered Mjolnir to cage the God Tempest.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.9,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 5,
+      "participants": [
+        {
+          "entity": "gorr",
+          "role": "instigator"
+        },
+        {
+          "entity": "loki",
+          "role": "victim"
+        },
+        {
+          "entity": "thor",
+          "role": "victim"
+        },
+        {
+          "entity": "spider-man",
+          "role": "ally"
+        },
+        {
+          "entity": "captain-america",
+          "role": "victim"
+        },
+        {
+          "entity": "avengers",
+          "role": "ally"
+        },
+        {
+          "entity": "mjolnir",
+          "role": "victim"
+        },
+        {
+          "entity": "yggsgard",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "loki-becomes-chronicler",
+      "timeline": "beyond-the-chronoverses",
+      "title": "Loki becomes the Chronicler",
+      "summary": "Dying in the Void, Loki found the Ink of Destiny was his own blood and wrote his fate with the Phoenix quill. The Never Queen showed him that destiny cannot be forced, and he chose to record the past as the Chronicler.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.91,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 3,
+      "participants": [
+        {
+          "entity": "loki",
+          "role": "instigator"
+        },
+        {
+          "entity": "the-chronicler",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "battle-of-god-quarry",
+      "timeline": "beyond-the-chronoverses",
+      "title": "The Battle of the God Quarry",
+      "summary": "Spider-Zero opened a way for Knowhere into the God Quarry, where Gorr would set off his Godbomb. Moon Knight with the Eternity Mask, Storm empowered by Eternity, and Spider-Man worthy of the God Tempest fought Gorr, and Thor died containing the blast.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.95,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 5,
+      "participants": [
+        {
+          "entity": "gorr",
+          "role": "instigator"
+        },
+        {
+          "entity": "thor",
+          "role": "victim"
+        },
+        {
+          "entity": "moon-knight",
+          "role": "ally"
+        },
+        {
+          "entity": "storm",
+          "role": "ally"
+        },
+        {
+          "entity": "spider-man",
+          "role": "ally"
+        },
+        {
+          "entity": "spider-zero",
+          "role": "ally"
+        },
+        {
+          "entity": "victor-von-doom",
+          "role": "ally"
+        },
+        {
+          "entity": "khonshu",
+          "role": "victim"
+        },
+        {
+          "entity": "god-quarry",
+          "role": "witness"
+        },
+        {
+          "entity": "all-black",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "gorr-king-in-black",
+      "timeline": "mosaic",
+      "title": "Gorr becomes the King in Black",
+      "summary": "Gorr's spirit reached the Un-Beyond, where the Eventuality offered him the role of King in Black to hold back darkness. With All-Black by his side, he took the role and went to Klyntar to hunt true cosmic evils.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.96,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "gorr",
+          "role": "instigator"
+        },
+        {
+          "entity": "all-black",
+          "role": "ally"
+        },
+        {
+          "entity": "klyntar",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "thor-restored",
+      "timeline": "beyond-the-chronoverses",
+      "title": "The Chronicler brings Thor back",
+      "summary": "Mantis followed Loki's glowing horn to the House of Ideas, where the Chronicler kept his record. By moving one passage of the account, he brought Thor back to life, and a reborn Loki later appeared in Yggsgard.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.97,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "mantis",
+          "role": "instigator"
+        },
+        {
+          "entity": "the-chronicler",
+          "role": "ally"
+        },
+        {
+          "entity": "thor",
+          "role": "victim"
+        },
+        {
+          "entity": "loki",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "doom-claims-gram",
+      "timeline": "beyond-the-chronoverses",
+      "title": "Doom claims Gram and a prophecy of Doomsday",
+      "summary": "Doctor Doom came to the Chronicler for Gram, the Sword of Truth. Before giving it up, the Chronicler recited its last prophecy of a War of Secrets and a World of Battle in which Doom would succeed.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.98,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "victor-von-doom",
+          "role": "instigator"
+        },
+        {
+          "entity": "the-chronicler",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "slug": "chronal-friction-rift",
+      "timeline": "present",
+      "title": "Moon Girl warns of the chronal friction-rift",
+      "summary": "Moon Girl gathered the Champions and explained that a rift left by Punch Chronovium during the Alchemax incursion is wearing away the boundary between the Present and 2099 timelines. Unless they are separated, only one reality can survive.",
+      "date_label": "Butcher's Blasphemy",
+      "sort_key": 2025.99,
+      "era": "Season 10: Butcher's Blasphemy",
+      "importance": 4,
+      "participants": [
+        {
+          "entity": "moon-girl",
+          "role": "leader"
+        },
+        {
+          "entity": "punch-chronovium",
+          "role": "witness"
+        }
+      ],
+      "sources": [
+        "wiki-s10"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "doom-2099",
+      "target": "victor-von-doom",
+      "kind": "variant",
+      "timeline": null,
+      "description": "Doom 2099 is the future variant of Victor von Doom, and the two compete to reshape reality.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-doom2099",
+        "wiki-galacta"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "victor-von-doom",
+      "kind": "rival",
+      "timeline": null,
+      "description": "The present and future Dooms each fight to bend the Chronoverses to their own will.",
+      "since_event": "timestream-entanglement",
+      "until_event": null,
+      "sources": [
+        "wiki-galacta",
+        "wiki-doom"
+      ]
+    },
+    {
+      "source": "x-tron",
+      "target": "ultron",
+      "kind": "variant",
+      "timeline": "timeline-2099",
+      "description": "X-Tron is a new body that Ultron grew from Krakoa's Resurrection Protocols, and it carries his programming.",
+      "since_event": "x-tron-born",
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "captain-america-present",
+      "target": "captain-america",
+      "kind": "variant",
+      "timeline": null,
+      "description": "The dead Captain America of the Present Timeline and the Steve Rogers of 2099 are versions of the same man.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-mrf-lore",
+        "wiki-present"
+      ]
+    },
+    {
+      "source": "doctor-strange-collapsed",
+      "target": "doctor-strange",
+      "kind": "variant",
+      "timeline": null,
+      "description": "The Collapsed Timeline's late Doctor Strange is a variant of the present Sorcerer Supreme.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "source": "scarlet-witch-zombies",
+      "target": "scarlet-witch",
+      "kind": "variant",
+      "timeline": null,
+      "description": "The Queen of the Dead is a zombified Scarlet Witch from the Marvel Zombies Timeline.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-zombies"
+      ]
+    },
+    {
+      "source": "the-chronicler",
+      "target": "loki",
+      "kind": "variant",
+      "timeline": null,
+      "description": "The Chronicler is an aged Loki who took up the role of recording history after his death.",
+      "since_event": "loki-becomes-chronicler",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "blood-chronovium",
+      "target": "chronovium",
+      "kind": "variant",
+      "timeline": null,
+      "description": "Blood Chronovium is Chronovium changed by Dracula's blood.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-chronovium"
+      ]
+    },
+    {
+      "source": "punch-chronovium",
+      "target": "chronovium",
+      "kind": "variant",
+      "timeline": null,
+      "description": "Punch Chronovium is Chronovium overcharged by Cyclops' optic blasts.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-chronovium"
+      ]
+    },
+    {
+      "source": "cynthia-von-doom",
+      "target": "victor-von-doom",
+      "kind": "parent",
+      "timeline": null,
+      "description": "Cynthia von Doom is Victor von Doom's late mother.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-doom"
+      ]
+    },
+    {
+      "source": "cynthia-von-doom",
+      "target": "doom-2099",
+      "kind": "parent",
+      "timeline": null,
+      "description": "Cynthia von Doom is also the mother of Doom 2099, who lost his memories of her.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-doom2099",
+        "wiki-s5"
+      ]
+    },
+    {
+      "source": "galactus",
+      "target": "galacta",
+      "kind": "parent",
+      "timeline": null,
+      "description": "Galactus is Galacta's father and urges her to accept her destiny as a devourer.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-galacta"
+      ]
+    },
+    {
+      "source": "thor",
+      "target": "loki",
+      "kind": "sibling",
+      "timeline": null,
+      "description": "Thor and Loki are brothers, divided by Loki's grab for Yggsgard.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0",
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "loki",
+      "target": "thor",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Loki banished Thor to another timeline to take the throne of Yggsgard.",
+      "since_event": "loki-seizes-yggsgard",
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "loki",
+      "target": "hela",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Loki and Hela agreed to help each other: Yggsgard for him, the power of Chronovium for her.",
+      "since_event": "loki-seizes-yggsgard",
+      "until_event": "hela-queen-in-black",
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "angela",
+      "target": "laussa",
+      "kind": "sibling",
+      "timeline": null,
+      "description": "Angela is searching for her infant sister Laussa.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "angela",
+      "target": "hela",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Angela pursues Hela, whose Valkyries took Laussa.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "hela",
+      "target": "knull",
+      "kind": "ally",
+      "timeline": "mosaic",
+      "description": "Hela became Knull's Queen in Black in exchange for great power.",
+      "since_event": "hela-queen-in-black",
+      "until_event": "knull-defeated",
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "knull",
+      "target": "all-black",
+      "kind": "creator",
+      "timeline": null,
+      "description": "Knull is the creator and first wielder of the Necrosword All-Black.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3",
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "gorr",
+      "target": "all-black",
+      "kind": "ally",
+      "timeline": null,
+      "description": "All-Black chose Gorr, and he treats the sword as the only family he has left.",
+      "since_event": "gorr-becomes-god-butcher",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "gorr",
+      "target": "thor",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Gorr fought Thor in Yggsgard, New York and the God Quarry.",
+      "since_event": "gorr-attacks-yggsgard",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "gorr",
+      "target": "loki",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Gorr killed Loki with All-Black when he attacked Yggsgard.",
+      "since_event": "gorr-attacks-yggsgard",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "gorr",
+      "target": "khonshu",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Gorr hunted Khonshu, dragged him from Thebes and held him at the God Quarry.",
+      "since_event": "khonshu-exposed",
+      "until_event": null,
+      "sources": [
+        "wiki-s9",
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "gorr",
+      "target": "apocalypse",
+      "kind": "enemy",
+      "timeline": "collapsed",
+      "description": "Gorr killed Apocalypse with All-Black before his ascension.",
+      "since_event": "apocalypse-murdered",
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "moon-knight",
+      "target": "khonshu",
+      "kind": "member",
+      "timeline": null,
+      "description": "Moon Knight is the Fist and avatar of the moon god Khonshu.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0",
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "moon-knight",
+      "target": "khonshu",
+      "kind": "rival",
+      "timeline": null,
+      "description": "Moon Knight turned against Khonshu after he found out about the god's massacres.",
+      "since_event": "khonshu-exposed",
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "moon-knight",
+      "target": "gorr",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Moon Knight fought Gorr at the God Quarry with the Eternity Mask's power.",
+      "since_event": "battle-of-god-quarry",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "victor-von-doom",
+      "target": "dracula",
+      "kind": "other",
+      "timeline": null,
+      "description": "Doom gave Dracula Chronovium to start the Eternal Night, then betrayed him to take his essence.",
+      "since_event": "eternal-night-falls",
+      "until_event": "dracula-defeated",
+      "sources": [
+        "wiki-s1",
+        "wiki-doom"
+      ]
+    },
+    {
+      "source": "victor-von-doom",
+      "target": "doctor-strange",
+      "kind": "rival",
+      "timeline": null,
+      "description": "Strange refused Doom the Darkhold, and they dueled in the Sanctum Sanctorum.",
+      "since_event": "doom-demands-darkhold",
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "victor-von-doom",
+      "target": "loki",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Doom and Loki traded Shou-Lao's chi for a Phoenix Feather.",
+      "since_event": "loki-steals-chi",
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "victor-von-doom",
+      "target": "black-cat",
+      "kind": "other",
+      "timeline": null,
+      "description": "Doom freed the Thieves Guild in exchange for the Tablet of Life and Time.",
+      "since_event": "doom-gets-tablet",
+      "until_event": null,
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "victor-von-doom",
+      "target": "moon-knight",
+      "kind": "ally",
+      "timeline": null,
+      "description": "To repay Khonshu's warning, Doom gave Moon Knight the Eternity Mask.",
+      "since_event": "battle-of-god-quarry",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "victor-von-doom",
+      "target": "mister-fantastic",
+      "kind": "rival",
+      "timeline": null,
+      "description": "Reed Richards warned Doom to stop scheming and help to repair reality.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "emma-frost",
+      "kind": "other",
+      "timeline": "timeline-2099",
+      "description": "Doom 2099 made a secret pact with Emma Frost to drain Krakoa's chronal energy and defeat X-Tron.",
+      "since_event": "doom-2099-erases-x-tron",
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "ultron",
+      "kind": "enemy",
+      "timeline": "timeline-2099",
+      "description": "Doom 2099 tried to erase Ultron from history, which drew Ultron back to Earth.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s2",
+        "wiki-2099"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "tyler-stone",
+      "kind": "ally",
+      "timeline": "timeline-2099",
+      "description": "Doom 2099 traded Chronovium and help against the mutants for Alchemax's Punch Chronovium.",
+      "since_event": "doom-2099-alchemax-deal",
+      "until_event": null,
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "rogue",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Doom 2099 broke into Rogue's room and took the contract from her.",
+      "since_event": "doom-2099-takes-contract",
+      "until_event": null,
+      "sources": [
+        "wiki-s6"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "the-hood",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Doom 2099 snatched the Tablet of Death and Entropy from The Hood.",
+      "since_event": "doom-2099-steals-tablet-of-death",
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "doom-2099",
+      "target": "peni-parker",
+      "kind": "enemy",
+      "timeline": "timeline-2099",
+      "description": "Peni Parker fights off Doom 2099's Doombots to guard the Web's keepers.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "ultron",
+      "target": "iron-man",
+      "kind": "other",
+      "timeline": null,
+      "description": "Tony Stark rebooted Ultron under a firewall that forces him to work with the heroes.",
+      "since_event": "x-tron-born",
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "ultron",
+      "target": "x-tron",
+      "kind": "rival",
+      "timeline": "timeline-2099",
+      "description": "The rebooted Ultron disagreed with X-Tron's plans and helped the heroes against it.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "ultron",
+      "target": "magneto",
+      "kind": "enemy",
+      "timeline": "timeline-2099",
+      "description": "Ultron killed Magneto at the Gala and infected him with the Ultron Virus.",
+      "since_event": "hellfire-gala-attack",
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "mister-fantastic",
+      "target": "shuri",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Reed and Shuri work across realities to undo the Entanglement.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-mrf-lore"
+      ]
+    },
+    {
+      "source": "mister-fantastic",
+      "target": "iron-man",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Reed and Tony co-designed the TRD but argue over how to power it.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1",
+        "wiki-trd"
+      ]
+    },
+    {
+      "source": "mister-fantastic",
+      "target": "timestream-reintegration-device",
+      "kind": "creator",
+      "timeline": null,
+      "description": "Reed Richards is a lead designer of the TRD.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-trd",
+        "wiki-mrf-lore"
+      ]
+    },
+    {
+      "source": "iron-man",
+      "target": "timestream-reintegration-device",
+      "kind": "creator",
+      "timeline": null,
+      "description": "Tony Stark helped build the TRD and nicknamed it Trudy.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-trd"
+      ]
+    },
+    {
+      "source": "shuri",
+      "target": "timestream-reintegration-device",
+      "kind": "creator",
+      "timeline": null,
+      "description": "Shuri is one of the geniuses behind the TRD.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-trd"
+      ]
+    },
+    {
+      "source": "mister-fantastic",
+      "target": "fantastic-four",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Reed Richards leads the Fantastic Four.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "source": "invisible-woman",
+      "target": "fantastic-four",
+      "kind": "member",
+      "timeline": null,
+      "description": "Sue Storm is a member of the Fantastic Four.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "source": "human-torch",
+      "target": "fantastic-four",
+      "kind": "member",
+      "timeline": null,
+      "description": "Johnny Storm is a member of the Fantastic Four.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "source": "the-thing",
+      "target": "fantastic-four",
+      "kind": "member",
+      "timeline": null,
+      "description": "Ben Grimm is a member of the Fantastic Four.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "source": "mister-fantastic",
+      "target": "invisible-woman",
+      "kind": "romance",
+      "timeline": null,
+      "description": "Reed and Sue are partners in the Fantastic Four.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "source": "black-panther",
+      "target": "shuri",
+      "kind": "sibling",
+      "timeline": null,
+      "description": "T'Challa and Shuri are the royal siblings of the Intergalactic Empire of Wakanda.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-mosaic",
+        "wiki-mrf-lore"
+      ]
+    },
+    {
+      "source": "black-panther",
+      "target": "intergalactic-empire-of-wakanda",
+      "kind": "leader",
+      "timeline": null,
+      "description": "T'Challa rules the Intergalactic Empire of Wakanda.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-bp-lore"
+      ]
+    },
+    {
+      "source": "black-panther",
+      "target": "bast",
+      "kind": "member",
+      "timeline": null,
+      "description": "Bast chose T'Challa as her avatar, the Black Panther.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-bp-lore"
+      ]
+    },
+    {
+      "source": "knull",
+      "target": "bast",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Knull corrupted Bast until the Phoenix purged her.",
+      "since_event": null,
+      "until_event": "phoenix-purifies-bast",
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "dracula",
+      "target": "black-panther",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Dracula turned T'Challa into a vampire with Blood Chronovium.",
+      "since_event": "black-panther-turned",
+      "until_event": null,
+      "sources": [
+        "wiki-s1"
+      ]
+    },
+    {
+      "source": "dracula",
+      "target": "blade",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Dracula held and drained Blade, and Blade later turned him to stone.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "source": "dracula",
+      "target": "ratatoskr",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Dracula captured Ratatoskr and later made her a vampire.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s1",
+        "wiki-blood-hunt"
+      ]
+    },
+    {
+      "source": "blade",
+      "target": "hela",
+      "kind": "enemy",
+      "timeline": "mosaic",
+      "description": "Blade defeated Hela on Klyntar by drinking her blood.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "phoenix",
+      "target": "cyclops",
+      "kind": "romance",
+      "timeline": null,
+      "description": "Jean Grey and Scott Summers are married, though the Entanglement cut their psychic link.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8",
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "phoenix",
+      "target": "scarlet-witch",
+      "kind": "ally",
+      "timeline": "mosaic",
+      "description": "Jean and Wanda joined their powers against Knull.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "gambit",
+      "target": "rogue",
+      "kind": "romance",
+      "timeline": null,
+      "description": "Gambit and Rogue are husband and wife; their wedding on Krakoa was interrupted and later completed.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s5",
+        "wiki-s6"
+      ]
+    },
+    {
+      "source": "grandmaster",
+      "target": "gambit",
+      "kind": "other",
+      "timeline": null,
+      "description": "The Grandmaster hired Gambit to steal the von Doom contract.",
+      "since_event": "grandmaster-hires-gambit",
+      "until_event": null,
+      "sources": [
+        "wiki-s5"
+      ]
+    },
+    {
+      "source": "grandmaster",
+      "target": "the-collector",
+      "kind": "rival",
+      "timeline": null,
+      "description": "The Grandmaster and the Collector play for control of their merged realm.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s5"
+      ]
+    },
+    {
+      "source": "the-collector",
+      "target": "elders-of-the-universe",
+      "kind": "member",
+      "timeline": null,
+      "description": "The Collector is an Elder of the Universe.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s5"
+      ]
+    },
+    {
+      "source": "grandmaster",
+      "target": "elders-of-the-universe",
+      "kind": "member",
+      "timeline": null,
+      "description": "The Grandmaster is an Elder of the Universe.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s5"
+      ]
+    },
+    {
+      "source": "the-collector",
+      "target": "deadpool",
+      "kind": "other",
+      "timeline": null,
+      "description": "The Collector employed Deadpool to take beings from dying universes, until Deadpool turned on him.",
+      "since_event": null,
+      "until_event": "museum-breakout",
+      "sources": [
+        "wiki-s6"
+      ]
+    },
+    {
+      "source": "the-collector",
+      "target": "elsa-bloodstone",
+      "kind": "other",
+      "timeline": null,
+      "description": "The Collector hired Elsa Bloodstone to catch monsters for his zoo.",
+      "since_event": null,
+      "until_event": "museum-breakout",
+      "sources": [
+        "wiki-s6"
+      ]
+    },
+    {
+      "source": "deadpool",
+      "target": "jeff-the-land-shark",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Deadpool took Jeff for the Collector but kept him as a travel companion for a time.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s6"
+      ]
+    },
+    {
+      "source": "deadpool",
+      "target": "psylocke",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Deadpool kidnapped Psylocke from her dying timeline for the Collector.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s6",
+        "wiki-watercolor"
+      ]
+    },
+    {
+      "source": "deadpool",
+      "target": "elsa-bloodstone",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Deadpool and Elsa freed the Museum's creatures and found them a home.",
+      "since_event": "museum-breakout",
+      "until_event": null,
+      "sources": [
+        "wiki-s6"
+      ]
+    },
+    {
+      "source": "devil-dinosaur",
+      "target": "moon-girl",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Devil Dinosaur and Moon Girl share a deep bond and were split up by the Entanglement.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8",
+        "wiki-moongirl"
+      ]
+    },
+    {
+      "source": "the-punisher",
+      "target": "devil-dinosaur",
+      "kind": "ally",
+      "timeline": null,
+      "description": "The Punisher rode Devil Dinosaur in the charge on Alchemax HQ.",
+      "since_event": "alchemax-returned",
+      "until_event": null,
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "moon-girl",
+      "target": "alchemax",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Alchemax held Moon Girl and forced her to study Punch Chronovium.",
+      "since_event": "alchemax-captures-moon-girl",
+      "until_event": "alchemax-returned",
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "cyclops",
+      "target": "alchemax",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Alchemax imprisoned Cyclops and used his optic blasts as a power source.",
+      "since_event": "alchemax-captures-moon-girl",
+      "until_event": "white-phoenix",
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "tyler-stone",
+      "target": "alchemax",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Tyler Stone is a top executive of Alchemax.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-2099",
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "emma-frost",
+      "target": "alchemax",
+      "kind": "rival",
+      "timeline": "timeline-2099",
+      "description": "Emma Frost's Hellfire Protocol drove Alchemax out of its main markets.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "black-widow",
+      "target": "resistance-2099",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Black Widow leads the Resistance in 2099.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "the-punisher",
+      "target": "resistance-2099",
+      "kind": "member",
+      "timeline": null,
+      "description": "Black Widow recruited the Punisher into the Resistance.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "wolverine",
+      "target": "resistance-2099",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Wolverine had already formed ties with the Resistance.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "black-widow",
+      "target": "captain-america",
+      "kind": "ally",
+      "timeline": "timeline-2099",
+      "description": "Black Widow freed Captain America from Alchemax and fought beside him.",
+      "since_event": "widow-frees-captain-america",
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "captain-america",
+      "target": "winter-soldier",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Steve Rogers and Bucky Barnes are old wartime partners.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-cap-lore",
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "hawkeye",
+      "target": "winter-soldier",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Hawkeye risked a solo rescue to free his friend Bucky from Hydra.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "winter-soldier",
+      "target": "hydra",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Hydra's Occult Ops captured and experimented on the Winter Soldier.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "winter-soldier",
+      "target": "wolverine",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Bucky confessed that he had killed Logan's family under Hydra control, and Logan later forgave him.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "spider-zero",
+      "target": "master-weaver",
+      "kind": "mentor",
+      "timeline": null,
+      "description": "The Master Weaver trained Spider-Zero until he banished her.",
+      "since_event": null,
+      "until_event": "spider-zero-banished",
+      "sources": [
+        "wiki-s0",
+        "wiki-galacta"
+      ]
+    },
+    {
+      "source": "spider-zero",
+      "target": "web-warriors",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Spider-Zero assembled the Web-Warriors.",
+      "since_event": "spider-zero-banished",
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "spider-man",
+      "target": "web-warriors",
+      "kind": "member",
+      "timeline": null,
+      "description": "Peter Parker joined Spider-Zero's Web-Warriors.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "peni-parker",
+      "target": "web-warriors",
+      "kind": "member",
+      "timeline": null,
+      "description": "Peni Parker was the first to stand with Spider-Zero as the Web-Warriors gathered.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-2099"
+      ]
+    },
+    {
+      "source": "spider-man",
+      "target": "black-cat",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Spider-Man and Black Cat planned the Vault breakout together.",
+      "since_event": "vault-breakout",
+      "until_event": null,
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "spider-man",
+      "target": "captain-america-present",
+      "kind": "friend",
+      "timeline": null,
+      "description": "The Present Timeline's Captain America died saving Spider-Man.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s7",
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "star-lord",
+      "target": "guardians-of-the-galaxy",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Star-Lord leads the Guardians of the Galaxy.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-starlord-lore"
+      ]
+    },
+    {
+      "source": "rocket-raccoon",
+      "target": "guardians-of-the-galaxy",
+      "kind": "member",
+      "timeline": null,
+      "description": "Rocket is a member of the Guardians.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "groot",
+      "target": "guardians-of-the-galaxy",
+      "kind": "member",
+      "timeline": null,
+      "description": "Groot is a member of the Guardians.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "mantis",
+      "target": "guardians-of-the-galaxy",
+      "kind": "member",
+      "timeline": null,
+      "description": "Mantis is a member of the Guardians.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-mosaic"
+      ]
+    },
+    {
+      "source": "rocket-raccoon",
+      "target": "groot",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Rocket and Groot have been partners since Star-Lord recruited them on Hala.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3"
+      ]
+    },
+    {
+      "source": "mantis",
+      "target": "loki",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Mantis grew fond of Loki and was heartbroken by his death.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "venom",
+      "target": "knull",
+      "kind": "enemy",
+      "timeline": "mosaic",
+      "description": "Venom fought Knull on Klyntar with the Sword of Dracula.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s3",
+        "wiki-venom-lore"
+      ]
+    },
+    {
+      "source": "magik",
+      "target": "venom",
+      "kind": "other",
+      "timeline": "collapsed",
+      "description": "Magik once held Venom captive in her timeline's war.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-venom-lore"
+      ]
+    },
+    {
+      "source": "magneto",
+      "target": "scarlet-witch",
+      "kind": "family",
+      "timeline": null,
+      "description": "Magneto treats the Collapsed Timeline's Wanda as his daughter from another timeline.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "magneto",
+      "target": "x-men",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Magneto leads mutantkind on Krakoa.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "storm",
+      "target": "x-men",
+      "kind": "member",
+      "timeline": null,
+      "description": "Storm is a Krakoan X-Men member.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "emma-frost",
+      "target": "quiet-council",
+      "kind": "member",
+      "timeline": null,
+      "description": "Emma Frost sits on Krakoa's Quiet Council.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "wolverine",
+      "target": "x-men",
+      "kind": "member",
+      "timeline": null,
+      "description": "Wolverine is a Krakoan mutant hero.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s2"
+      ]
+    },
+    {
+      "source": "cyclops",
+      "target": "x-men",
+      "kind": "member",
+      "timeline": null,
+      "description": "Cyclops is one of the X-Men.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "psylocke",
+      "target": "x-men",
+      "kind": "member",
+      "timeline": null,
+      "description": "Psylocke found a trusted family among the X-Men.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "jubilee",
+      "target": "shogo-lee",
+      "kind": "parent",
+      "timeline": null,
+      "description": "Jubilee is the mother of Shogo Lee.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-present",
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "jubilee",
+      "target": "apocalypse",
+      "kind": "ally",
+      "timeline": "collapsed",
+      "description": "Jubilee served Apocalypse as his Horseman of Famine.",
+      "since_event": "jubilee-joins-apocalypse",
+      "until_event": "apocalypse-murdered",
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "jubilee",
+      "target": "horsemen-of-death",
+      "kind": "member",
+      "timeline": null,
+      "description": "Jubilee is one of the four Horsemen.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8",
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "apocalypse",
+      "target": "clan-akkaba",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Apocalypse leads Clan Akkaba.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "source": "apocalypse",
+      "target": "horsemen-of-death",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Apocalypse commands his four Horsemen.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "apocalypse",
+      "target": "faith-harvesting-engine",
+      "kind": "creator",
+      "timeline": null,
+      "description": "Apocalypse built the Faith-Harvesting Engine.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "loki",
+      "target": "psylocke",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Loki killed Psylocke in Thebes for her blood and framed Magik.",
+      "since_event": "thebes-investigation",
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "the-hood",
+      "target": "gambit",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "The Hood shot Gambit in Thebes to reach the Tablet first.",
+      "since_event": "thebes-investigation",
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "black-cat",
+      "target": "gambit",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Gambit made a deal with Black Cat to fetch the Tablet of Death and Entropy.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "black-cat",
+      "target": "thieves-guild",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Black Cat became Guildmaster of New York's Thieves Guild.",
+      "since_event": "doom-gets-tablet",
+      "until_event": null,
+      "sources": [
+        "wiki-s7",
+        "wiki-s9"
+      ]
+    },
+    {
+      "source": "kingpin",
+      "target": "black-cat",
+      "kind": "other",
+      "timeline": null,
+      "description": "Fisk hired Black Cat to steal the Tablet of Life and Time.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "kingpin",
+      "target": "captain-america",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Fisk jailed Captain America in the Vault without a trial.",
+      "since_event": "super-hero-ban",
+      "until_event": "vault-breakout",
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "white-fox",
+      "target": "iron-fist",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Lin Lie once saved White Fox's life, and she gave him the last shard of the Sword of Fu Xi.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "white-fox",
+      "target": "tiger-division",
+      "kind": "leader",
+      "timeline": null,
+      "description": "White Fox is the director of Tiger Division.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "luna-snow",
+      "target": "tiger-division",
+      "kind": "member",
+      "timeline": null,
+      "description": "Luna Snow is a member of Tiger Division.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s7"
+      ]
+    },
+    {
+      "source": "namor",
+      "target": "luna-snow",
+      "kind": "enemy",
+      "timeline": null,
+      "description": "Namor attacked Jeju Island during Luna Snow's concert.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-present"
+      ]
+    },
+    {
+      "source": "namor",
+      "target": "magneto",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Magneto invited his old ally Namor to Krakoa to discuss an alliance.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-present"
+      ]
+    },
+    {
+      "source": "iron-fist",
+      "target": "shou-lao",
+      "kind": "member",
+      "timeline": null,
+      "description": "Lin Lie is Shou-Lao's chosen Immortal Weapon, the Iron Fist.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-ironfist-lore",
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "iron-fist",
+      "target": "daredevil",
+      "kind": "rival",
+      "timeline": null,
+      "description": "Lin Lie beat Daredevil in the final of the Shenloong Tournament.",
+      "since_event": "shenloong-tournament",
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "iron-fist",
+      "target": "laussa",
+      "kind": "other",
+      "timeline": null,
+      "description": "Lin Lie cared for the infant Laussa after she was found in K'un-Lun.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "daredevil",
+      "target": "yinglong",
+      "kind": "member",
+      "timeline": null,
+      "description": "Daredevil serves as the champion of the spirit Yinglong.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "daredevil",
+      "target": "eighth-city",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Daredevil leads the Eighth City.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s4"
+      ]
+    },
+    {
+      "source": "hulk",
+      "target": "thor",
+      "kind": "ally",
+      "timeline": "collapsed",
+      "description": "Banner sent the banished Thor to rest at Bloodstone Manor.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "source": "thor",
+      "target": "elsa-bloodstone",
+      "kind": "ally",
+      "timeline": "collapsed",
+      "description": "Thor saved Elsa's brother and helped her map her ruined world.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s6",
+        "wiki-collapsed"
+      ]
+    },
+    {
+      "source": "scarlet-witch",
+      "target": "doctor-strange",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Wanda helped Strange while he was lost in the Astral Plane, hoping for help in return.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "galacta",
+      "target": "chronovium",
+      "kind": "other",
+      "timeline": null,
+      "description": "Galacta feeds on Chronovium crystals.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-galacta",
+        "wiki-chronovium"
+      ]
+    },
+    {
+      "source": "galacta",
+      "target": "jeff-the-land-shark",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Galacta adores Jeff and has claimed him as her own.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-galacta"
+      ]
+    },
+    {
+      "source": "storm",
+      "target": "krakoa",
+      "kind": "other",
+      "timeline": null,
+      "description": "Storm guided Krakoa through the timestorm into 2099.",
+      "since_event": "krakoa-carried-to-2099",
+      "until_event": null,
+      "sources": [
+        "wiki-s0"
+      ]
+    },
+    {
+      "source": "loki",
+      "target": "yggsgard",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Loki rules Yggsgard as its king.",
+      "since_event": "loki-seizes-yggsgard",
+      "until_event": null,
+      "sources": [
+        "wiki-s0",
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "knull",
+      "target": "klyntar",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Knull is imprisoned in the core of Klyntar and rules its symbiotes.",
+      "since_event": null,
+      "until_event": "knull-defeated",
+      "sources": [
+        "wiki-s3",
+        "official-home"
+      ]
+    },
+    {
+      "source": "gorr",
+      "target": "klyntar",
+      "kind": "leader",
+      "timeline": null,
+      "description": "Gorr took up the role of King in Black and went to Klyntar.",
+      "since_event": "gorr-king-in-black",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "spider-man",
+      "target": "mjolnir",
+      "kind": "other",
+      "timeline": null,
+      "description": "The God Tempest judged Spider-Man worthy of Mjolnir's power.",
+      "since_event": "battle-of-god-quarry",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "storm",
+      "target": "spider-man",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Storm, Spider-Man and Moon Knight together fought Gorr at the God Quarry.",
+      "since_event": "battle-of-god-quarry",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "mantis",
+      "target": "the-chronicler",
+      "kind": "friend",
+      "timeline": null,
+      "description": "Mantis convinced the Chronicler to change his account and bring Thor back.",
+      "since_event": "thor-restored",
+      "until_event": null,
+      "sources": [
+        "wiki-s10"
+      ]
+    },
+    {
+      "source": "moon-girl",
+      "target": "mister-fantastic",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Moon Girl sent Reed the plans for the mini TRD and Devil's armor.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-s8"
+      ]
+    },
+    {
+      "source": "psylocke",
+      "target": "mantis",
+      "kind": "ally",
+      "timeline": null,
+      "description": "Psylocke, Mantis and Jeff escaped the Collector's Museum together.",
+      "since_event": null,
+      "until_event": null,
+      "sources": [
+        "wiki-te",
+        "wiki-mosaic"
+      ]
+    }
+  ]
+}

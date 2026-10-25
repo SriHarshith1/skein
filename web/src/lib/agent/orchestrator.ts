@@ -41,10 +41,11 @@ export const SUBAGENTS: Record<AgentName, { title: string; brief: string; tools:
   scout: {
     title: "Scout",
     brief: "LIVE wiki research when the database has no answer, or when the user asks to add/fix lore (proposes edits for review).",
-    tools: ["find_entity", "wiki_search", "wiki_read", "propose_edit"],
+    tools: ["find_entity", "character_events", "wiki_search", "wiki_read", "propose_edit"],
     system: "You are the Scout. You read the live community wiki to fill gaps in the lore database. " +
-      "Search, read the best page, and report facts with the page URL. If you find a clear fact the database lacks, " +
-      "call propose_edit once with a precise payload and the source_url. Never invent facts.",
+      "Search, read the best page, and report facts with the page URL. Before you finish, compare what you read with " +
+      "find_entity and character_events results. When the user asks to add, fix or propose lore, call propose_edit for " +
+      "each clearly sourced fact the database lacks (at most 3), with a precise payload and the source_url. Never invent facts.",
   },
 };
 
@@ -144,7 +145,7 @@ export async function ask(opts: {
           system: `${def.system}\n${gameLine}\n${COMMON_RULES}`,
           prompt: `${history.length ? `Context from the conversation:\n${historyText(history)}\n\n` : ""}Task: ${task}`,
           tools: def.tools.map((n) => tools[n]),
-          maxSteps: agent === "scout" ? 6 : 5,
+          maxSteps: agent === "scout" ? 8 : 5,
           onTool: (t: ToolTrace) => emit({ type: "tool", agent, tool: t.tool, args: t.args, ok: t.ok }),
         });
         emit({ type: "agent_done", agent, findings: r.text, tools: r.trace.length });

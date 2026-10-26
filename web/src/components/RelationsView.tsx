@@ -6,6 +6,7 @@ import { RELATION_COLORS } from "./client";
 import { EntityEditor, RelationEditor } from "./Editors";
 import { RelationGraph } from "./RelationGraph";
 import { Button, Chip, Empty } from "./ui";
+import { STATIC } from "@/lib/static";
 
 // Ego graph around one character, filtered to one timeline (null-timeline bonds hold everywhere).
 export function RelationsView({ bundle, reload, initialFocus }: { bundle: Bundle; reload: () => void; initialFocus?: string }) {
@@ -77,13 +78,13 @@ export function RelationsView({ bundle, reload, initialFocus }: { bundle: Bundle
               <option value={2}>Two steps out</option>
             </select>
           </label>
-          <Button kind="primary" onClick={() => setEditRel("new")}>Add relationship</Button>
-          <Button onClick={() => setEditEnt("new")}>Add character</Button>
+          {!STATIC && <Button kind="primary" onClick={() => setEditRel("new")}>Add relationship</Button>}
+          {!STATIC && <Button onClick={() => setEditEnt("new")}>Add character</Button>}
         </div>
         {edges.length ? (
           <RelationGraph nodes={nodes} edges={edges} focusId={focus} height={600}
             onNodeClick={(id) => setFocus(id)}
-            onEdgeClick={(id) => setEditRel(bundle.relationships.find((r) => r.id === id) ?? null)} />
+            onEdgeClick={STATIC ? undefined : (id) => setEditRel(bundle.relationships.find((r) => r.id === id) ?? null)} />
         ) : (
           <Empty title="No relationships here yet">Pick another timeline, or add the first relationship for this character.</Empty>
         )}
@@ -95,7 +96,7 @@ export function RelationsView({ bundle, reload, initialFocus }: { bundle: Bundle
         <aside className="space-y-3 rounded-[3px] border border-line bg-panel p-4 lg:self-start">
           <div className="flex items-start justify-between gap-2">
             <h3 className="font-display text-xl font-bold">{me.name}</h3>
-            <Button onClick={() => setEditEnt(me)}>Edit</Button>
+            {!STATIC && <Button onClick={() => setEditEnt(me)}>Edit</Button>}
           </div>
           {me.variant_of && <p className="text-xs text-dim">Variant of {names.get(me.variant_of)}</p>}
           {me.aliases.length > 0 && <p className="text-xs text-dim">Also known as {me.aliases.join(", ")}</p>}
@@ -105,8 +106,8 @@ export function RelationsView({ bundle, reload, initialFocus }: { bundle: Bundle
               const other = e.source === focus ? e.target : e.source;
               return (
                 <li key={e.id}>
-                  <button className="w-full rounded-[3px] p-1.5 text-left text-sm hover:bg-raise"
-                    onClick={() => setEditRel(bundle.relationships.find((r) => r.id === e.id) ?? null)}>
+                  <button className="w-full rounded-[3px] p-1.5 text-left text-sm hover:bg-raise disabled:hover:bg-transparent"
+                    disabled={STATIC} onClick={() => setEditRel(bundle.relationships.find((r) => r.id === e.id) ?? null)}>
                     <Chip color={RELATION_COLORS[e.kind]}>{e.kind}</Chip> <b>{names.get(other)}</b>
                     {e.description && <span className="block text-xs text-dim">{e.description}</span>}
                   </button>
@@ -114,7 +115,7 @@ export function RelationsView({ bundle, reload, initialFocus }: { bundle: Bundle
               );
             })}
           </ul>
-          <p className="text-xs text-dim">Click a person in the graph to re-center. Click a line to edit it.</p>
+          <p className="text-xs text-dim">{STATIC ? "Click a person in the graph to re-center." : "Click a person in the graph to re-center. Click a line to edit it."}</p>
         </aside>
       )}
       {editRel && (

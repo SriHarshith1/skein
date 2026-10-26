@@ -2,6 +2,9 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { db } from "@/lib/db";
 import { listGames } from "@/lib/lore";
+import { REPO_URL, STATIC } from "@/lib/static";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 type GameRow = {
   slug: string; name: string; description: string | null;
@@ -46,20 +49,31 @@ function Weave({ game, knots }: { game: GameRow; knots: Knot[] }) {
   );
 }
 
-export default async function Home() {
-  await connection();
-  let games: GameRow[] = [];
+type HomeData = { games: GameRow[]; knots: Map<string, Knot[]>; dbError: string | null };
+
+// The Pages build reads JSON exported by `npm run export:data`; the local app reads Postgres.
+async function loadHome(): Promise<HomeData> {
   const knots = new Map<string, Knot[]>();
-  let dbError: string | null = null;
+  if (STATIC) {
+    const data = JSON.parse(await readFile(path.join(process.cwd(), "public/data/home.json"), "utf8"));
+    for (const [slug, list] of Object.entries(data.knots)) knots.set(slug, list as Knot[]);
+    return { games: data.games, knots, dbError: null };
+  }
+  await connection();
   try {
     const sql = db();
-    games = (await listGames(sql)) as unknown as GameRow[];
+    const games = (await listGames(sql)) as unknown as GameRow[];
     const rows = await sql`select g.slug, t.name as timeline, e.importance from events e
       join games g on g.id = e.game_id join timelines t on t.id = e.timeline_id order by g.slug, e.sort_key, e.title`;
     for (const r of rows) (knots.get(r.slug) ?? knots.set(r.slug, []).get(r.slug)!).push({ timeline: r.timeline, importance: r.importance });
+    return { games, knots, dbError: null };
   } catch (e) {
-    dbError = (e as Error).message;
+    return { games: [], knots, dbError: (e as Error).message };
   }
+}
+
+export default async function Home() {
+  const { games, knots, dbError } = await loadHome();
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 pb-20 pt-10 sm:px-6">
@@ -68,6 +82,12 @@ export default async function Home() {
         <p className="max-w-md text-lg leading-relaxed text-chalk/80 sm:justify-self-end sm:pb-3">
           Game lore as thread. Canon runs undyed; every alternate timeline is a dyed cord that splits from it.
           Edit any knot, trace who is tied to whom, and ask the archive.
+          {STATIC && (
+            <span className="mt-3 block text-sm text-dim">
+              This is a read-only copy. Editing and the Q&amp;A agent run locally:{" "}
+              <a className="text-madder underline underline-offset-2" href={REPO_URL}>get Skein on GitHub</a>.
+            </span>
+          )}
         </p>
       </header>
 

@@ -5,6 +5,7 @@ import type { Bundle, LoreEvent } from "./client";
 import { EventEditor } from "./Editors";
 import { ThreadTimeline, type ThreadLane } from "./ThreadTimeline";
 import { Button, Empty } from "./ui";
+import { STATIC } from "@/lib/static";
 
 export function TimelineView({ bundle, reload }: { bundle: Bundle; reload: () => void }) {
   const [hidden, setHidden] = useState<Set<string>>(new Set());
@@ -66,14 +67,14 @@ export function TimelineView({ bundle, reload }: { bundle: Bundle; reload: () =>
           <span className="tag">Only importance {minImp}+</span>
           <input type="range" min={1} max={5} value={minImp} onChange={(e) => setMinImp(Number(e.target.value))} className="w-full accent-madder" />
         </label>
-        <Button kind="primary" onClick={() => setEditing("new")}>Add event</Button>
+        {!STATIC && <Button kind="primary" onClick={() => setEditing("new")}>Add event</Button>}
       </aside>
       <div>
         <p className="mb-4 text-sm text-dim">
           {events.length} of {bundle.events.length} events. Bigger knots matter more. A cord that curves off another is a branch; a loose loop starts a separate continuity.
         </p>
         {events.length ? (
-          <ThreadTimeline events={events} lanes={lanes} onSelect={(id) => setEditing(bundle.events.find((e) => e.id === id) ?? null)}
+          <ThreadTimeline events={events} lanes={lanes} onSelect={STATIC ? undefined : (id) => setEditing(bundle.events.find((e) => e.id === id) ?? null)}
             selectedId={editing && editing !== "new" ? editing.id : null} />
         ) : (
           <Empty title="No events match these filters">Clear the search or turn timelines back on.</Empty>

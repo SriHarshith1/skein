@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { loadBundle, type Bundle } from "./client";
+import { REPO_URL, STATIC } from "@/lib/static";
 import { AskView } from "./AskView";
 import { RelationsView } from "./RelationsView";
 import { ReviewView } from "./ReviewView";
@@ -15,6 +16,8 @@ const TABS = [
   { id: "review", label: "Review" },
 ] as const;
 type Tab = (typeof TABS)[number]["id"];
+// The Pages copy has no server, so only the read-only views are offered.
+const VISIBLE = TABS.filter((t) => !STATIC || t.id === "timeline" || t.id === "relations");
 
 function stored(key: string) {
   try {
@@ -31,7 +34,7 @@ export function GameApp({ slug }: { slug: string }) {
   // cannot cause a hydration mismatch.
   const [tab, setTab] = useState<Tab>(() => {
     const saved = stored("lore-tab");
-    return TABS.some((t) => t.id === saved) ? (saved as Tab) : "timeline";
+    return VISIBLE.some((t) => t.id === saved) ? (saved as Tab) : "timeline";
   });
   const [version, setVersion] = useState(0);
   const [actor, setActor] = useState(() => stored("lore-actor") || "editor");
@@ -64,7 +67,7 @@ export function GameApp({ slug }: { slug: string }) {
           <Link href="/" className="font-display text-2xl font-extrabold uppercase text-dim hover:text-chalk">Skein</Link>
           <h1 className="font-display text-3xl font-extrabold uppercase">{bundle.game.name}</h1>
           <nav className="flex gap-1" aria-label="Views">
-            {TABS.map((t) => (
+            {VISIBLE.map((t) => (
               <button key={t.id} onClick={() => choose(t.id)} aria-current={tab === t.id}
                 className={`px-3 py-2 font-mono text-[11px] uppercase tracking-wider ${tab === t.id ? "text-chalk shadow-[inset_0_-3px_0_var(--madder)]" : "text-dim hover:text-chalk"}`}>
                 {t.label}
@@ -74,6 +77,9 @@ export function GameApp({ slug }: { slug: string }) {
               </button>
             ))}
           </nav>
+          {STATIC ? (
+            <a href={REPO_URL} className="tag ml-auto hover:text-chalk">Read-only copy · run it locally to edit and ask</a>
+          ) : (
           <label className="ml-auto flex items-center gap-2 text-xs text-dim">
             Editing as
             <input className="field w-28 py-1 text-xs" value={actor} onChange={(e) => {
@@ -81,13 +87,14 @@ export function GameApp({ slug }: { slug: string }) {
               try { localStorage.setItem("lore-actor", e.target.value); } catch {}
             }} />
           </label>
+          )}
         </div>
       </header>
       <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-6">
         {tab === "timeline" && <TimelineView bundle={bundle} reload={reload} />}
         {tab === "relations" && <RelationsView bundle={bundle} reload={reload} />}
         {/* Ask stays mounted so the conversation survives tab switches. */}
-        <div hidden={tab !== "ask"}><AskView bundle={bundle} onChanged={reload} /></div>
+        {!STATIC && <div hidden={tab !== "ask"}><AskView bundle={bundle} onChanged={reload} /></div>}
         {tab === "review" && <ReviewView bundle={bundle} version={version} onChanged={reload} />}
       </main>
       <footer className="border-t border-line px-4 py-3 text-center text-xs text-dim">

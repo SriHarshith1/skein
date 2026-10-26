@@ -1,5 +1,7 @@
 # Skein
 
+**Live (read-only copy): https://sriharshith1.github.io/skein/**
+
 Editable lore timelines for any game, with alternate timelines, relationship graphs per character,
 and a Q&A agent made of specialist subagents that answers with generated UI (timelines, graphs,
 character cards) and sources.
@@ -72,6 +74,17 @@ history. "Fetch wiki page" on a character pulls its page into the Archivist's co
 **Add a game:** write `research/<slug>.json` in the same shape as the others (see
 `web/src/lib/seed.ts` for the schema, `research/generators/` for how the three were built), set
 `wiki.api` to the game's `api.php`, then seed and scrape. No code changes.
+
+## Publish the read-only site
+
+GitHub Pages cannot run the database or the agent, so the site is a static copy of the
+Timeline and Relations views. After changing lore locally:
+
+```bash
+npm run export:data      # writes web/public/data/*.json from your database
+npm run build:static     # optional local check; then: npm run preview:static
+git commit -am "Update lore data" && git push   # the Deploy site workflow publishes it
+```
 
 ## Tests
 

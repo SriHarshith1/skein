@@ -1,6 +1,7 @@
 "use client";
 
 import type { Bundle } from "@/lib/lore";
+import { BASE_PATH, STATIC } from "@/lib/static";
 
 export type { Bundle, Entity, LoreEvent, Relationship, Source, Timeline } from "@/lib/lore";
 
@@ -23,7 +24,13 @@ export async function api<T = unknown>(path: string, init: RequestInit = {}): Pr
   return data as T;
 }
 
-export const loadBundle = (slug: string) => api<Bundle>(`/api/games/${slug}`);
+export const loadBundle = (slug: string) =>
+  STATIC
+    ? fetch(`${BASE_PATH}/data/${slug}.json`).then((r) => {
+        if (!r.ok) throw new Error(`no data for ${slug}`);
+        return r.json() as Promise<Bundle>;
+      })
+    : api<Bundle>(`/api/games/${slug}`);
 
 export const RELATION_KINDS = [
   "family", "sibling", "parent", "romance", "ally", "friend", "rival", "enemy",

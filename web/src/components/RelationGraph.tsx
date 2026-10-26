@@ -2,9 +2,10 @@
 
 import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY, type SimulationNodeDatum } from "d3-force";
 import {
-  Background, Controls, Handle, MarkerType, Position, ReactFlow, type Edge, type Node, type NodeProps,
+  Background, Controls, Handle, MarkerType, Position, ReactFlow, useReactFlow, useUpdateNodeInternals,
+  type Edge, type Node, type NodeProps,
 } from "@xyflow/react";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { RELATION_COLORS } from "./client";
 
 export type GNode = { id: string; name: string; kind: string; timeline: string | null };
@@ -50,6 +51,22 @@ function LoreNode({ data }: NodeProps<Node<{ label: string; kind: string; focus:
 
 const nodeTypes = { lore: LoreNode };
 
+// Production builds run effects once, and React Flow can miss the first size
+// measurement of freshly mounted nodes (they stay hidden, no edges). Measure
+// once after paint, then fit the view.
+function MeasureOnMount({ ids }: { ids: string[] }) {
+  const update = useUpdateNodeInternals();
+  const { fitView } = useReactFlow();
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      update(ids);
+      requestAnimationFrame(() => fitView({ padding: 0.2 }));
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [ids, update, fitView]);
+  return null;
+}
+
 export function RelationGraph({
   nodes, edges, focusId, height = 520, onNodeClick, onEdgeClick,
 }: {
@@ -82,6 +99,7 @@ export function RelationGraph({
     });
     return { flowNodes, flowEdges };
   }, [nodes, edges, focusId]);
+  const nodeIds = useMemo(() => flowNodes.map((n) => n.id), [flowNodes]);
 
   return (
     <div style={{ height }} className="overflow-hidden rounded-[3px] border border-line bg-ink">
@@ -97,7 +115,8 @@ export function RelationGraph({
         onEdgeClick={onEdgeClick ? (_, e) => onEdgeClick(e.id) : undefined}
         proOptions={{ hideAttribution: true }}
       >
-        <Background color="#24304f" gap={28} />
+        <MeasureOnMount ids={nodeIds} />
+        <Background color="#3b2e37" gap={28} />
         <Controls showInteractive={false} />
       </ReactFlow>
     </div>

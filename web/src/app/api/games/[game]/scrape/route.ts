@@ -3,7 +3,7 @@ import { scrapeEntity } from "@/lib/scrape";
 import { dbError, fail, gameOr404 } from "@/lib/api";
 
 // Body: {"entity_id": "...", "title"?: "Wiki page title"} — pulls one wiki page into the lore corpus.
-export async function POST(req: Request, ctx: RouteContext<"/api/games/[game]/scrape">) {
+export async function POST(req: Request, ctx: { params: Promise<{ game: string }> }) {
   const { game: slug } = await ctx.params;
   const game = await gameOr404(slug);
   if (!game) return fail(404, `unknown game ${slug}`);

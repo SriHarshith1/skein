@@ -3,7 +3,7 @@ import { acceptSuggestion, rejectSuggestion } from "@/lib/lore";
 import { actorOf, dbError, fail, gameOr404 } from "@/lib/api";
 
 // Body: {"action": "accept" | "reject"}
-export async function PATCH(req: Request, ctx: RouteContext<"/api/games/[game]/suggestions/[id]">) {
+export async function PATCH(req: Request, ctx: { params: Promise<{ game: string; id: string }> }) {
   const { game: slug, id } = await ctx.params;
   const game = await gameOr404(slug);
   if (!game) return fail(404, `unknown game ${slug}`);

@@ -6,7 +6,7 @@ import { fail, gameOr404 } from "@/lib/api";
 export const maxDuration = 300;
 
 // Streams the agent's progress as newline-delimited JSON, ending with the answer.
-export async function POST(req: Request, ctx: RouteContext<"/api/games/[game]/ask">) {
+export async function POST(req: Request, ctx: { params: Promise<{ game: string }> }) {
   const { game: slug } = await ctx.params;
   const game = await gameOr404(slug);
   if (!game) return fail(404, `unknown game ${slug}`);

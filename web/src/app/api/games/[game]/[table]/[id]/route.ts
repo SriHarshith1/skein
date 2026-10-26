@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 import { deleteRow, isEditableTable, updateRow } from "@/lib/lore";
 import { actorOf, dbError, fail, gameOr404 } from "@/lib/api";
 
-type Ctx = RouteContext<"/api/games/[game]/[table]/[id]">;
+type Ctx = { params: Promise<{ game: string; table: string; id: string }> };
 
 async function target(ctx: Ctx) {
   const { game: slug, table, id } = await ctx.params;
